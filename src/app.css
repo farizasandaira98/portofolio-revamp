@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: 'Inter', sans-serif; 
+  background: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode styles */
+:global(.light) body {
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+:global(.light) .glass-effect {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+:global(.light) .card-minimal {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+:global(.light) .card-minimal:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: rgba(103, 126, 234, 0.3);
+  transform: translateY(-8px);
+}
+
+:global(.light) .nav-dot {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+:global(.light) .nav-dot.active {
+  background: #667eea;
+}
+
+:global(.light) .timeline-minimal::before {
+  background: linear-gradient(to bottom, transparent, #667eea, transparent);
+}
+
+:global(.light) .timeline-item-minimal::before {
+  background: #667eea;
+}
+
+:global(.light) .text-white {
+  color: #1f2937 !important;
+}
+
+:global(.light) .text-white\/60 {
+  color: rgba(31, 41, 55, 0.6) !important;
+}
+
+:global(.light) .text-white\/70 {
+  color: rgba(31, 41, 55, 0.7) !important;
+}
+
+:global(.light) .text-white\/40 {
+  color: rgba(31, 41, 55, 0.4) !important;
+}
+
+:global(.light) .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+:global(.light) .border-white\/20 {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+:global(.light) .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+:global(.light) .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-minimal {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-minimal:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(103, 126, 234, 0.3);
+  transform: translateY(-8px);
+}
+
+.timeline-minimal {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline-minimal::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #667eea, transparent);
+}
+
+.timeline-item-minimal {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-item-minimal::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  background: #667eea;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-dot.active {
+  background: #667eea;
+  transform: scale(1.5);
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #667eea;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
+
+.cursor-outline {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(103, 126, 234, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transition: all 0.1s ease;
+}
+
+#app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}

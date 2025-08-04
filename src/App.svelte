@@ -33,7 +33,7 @@
     if (scrollTimeout) clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
       showUI = true;
-    }, 400);
+    }, 5000);
   }
 
   onMount(() => {
@@ -72,20 +72,6 @@
       sectionObserver.observe(section);
     });
 
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
       if (scrollTimeout) clearTimeout(scrollTimeout);
@@ -109,9 +95,9 @@
 
 <CustomCursor />
 {#if shouldShowUI}
-  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-999 {uiOpacityClass}"><Navigation /></div>
-  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-999 {uiOpacityClass}"><SideNavDots {currentSection} {scrollToSection} /></div>
-  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-999 {uiOpacityClass}"><Settings /></div>
+  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-[9999] {uiOpacityClass} pointer-events-auto"><Navigation {currentSection} /></div>
+  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-[9998] {uiOpacityClass} pointer-events-auto"><SideNavDots {currentSection} {scrollToSection} /></div>
+  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-[9997] {uiOpacityClass} pointer-events-auto"><Settings /></div>
 {/if}
 
 <main>

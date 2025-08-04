@@ -101,6 +101,19 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Enhanced glass effect for better visibility */
+.bg-white\/15 {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.border-white\/25 {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.text-white\/90 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
 .card-minimal {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.08);

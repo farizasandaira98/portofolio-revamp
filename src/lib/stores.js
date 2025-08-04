@@ -20,7 +20,7 @@ export const translations = {
             name: 'Muh Fariza',
             title: 'Fullstack Developer',
             viewWork: 'View My Work',
-            getInTouch: 'Get In Touch →',
+            getInTouch: 'Get In Touch',
         },
         work: {
             title: 'Experience',
@@ -138,7 +138,7 @@ export const translations = {
             name: 'Muh Fariza',
             title: 'Fullstack Developer',
             viewWork: 'Lihat Project Saya',
-            getInTouch: 'Hubungi Saya →',
+            getInTouch: 'Hubungi Saya',
         },
         work: {
             title: 'Pengalaman',

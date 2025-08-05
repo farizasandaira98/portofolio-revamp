@@ -13,6 +13,8 @@ export const translations = {
             home: 'Home',
             work: 'Work',
             education: 'Education',
+            companies: 'Companies',
+            products: 'Products',
             projects: 'Projects',
             contact: 'Contact',
         },
@@ -68,6 +70,14 @@ export const translations = {
                     animationSrc: 'https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json'
                 }
             ]
+        },
+        companies: {
+            title: 'Companies',
+            subtitle: 'Organizations where I\'ve contributed my expertise and grown professionally'
+        },
+        products: {
+            title: 'Products',
+            subtitle: 'Innovative solutions and applications I\'ve developed across various domains'
         },
         projects: {
             title: 'Selected Work',
@@ -131,6 +141,8 @@ export const translations = {
             home: 'Beranda',
             work: 'Pengalaman',
             education: 'Pendidikan',
+            companies: 'Perusahaan',
+            products: 'Produk',
             projects: 'Proyek',
             contact: 'Kontak',
         },
@@ -186,6 +198,14 @@ export const translations = {
                     animationSrc: 'https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json'
                 }
             ]
+        },
+        companies: {
+            title: 'Perusahaan',
+            subtitle: 'Organisasi tempat saya berkontribusi dan berkembang secara profesional'
+        },
+        products: {
+            title: 'Produk',
+            subtitle: 'Solusi inovatif dan aplikasi yang telah saya kembangkan di berbagai domain'
         },
         projects: {
             title: 'Proyek Pilihan',

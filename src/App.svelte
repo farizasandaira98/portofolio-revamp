@@ -8,6 +8,8 @@
   import HomeSection from './lib/HomeSection.svelte';
   import WorkSection from './lib/WorkSection.svelte';
   import EducationSection from './lib/EducationSection.svelte';
+  import CompaniesSection from './lib/CompaniesSection.svelte';
+  import ProductsSection from './lib/ProductsSection.svelte';
   import ProjectsSection from './lib/ProjectsSection.svelte';
   import ContactSection from './lib/ContactSection.svelte';
   import Footer from './lib/Footer.svelte';
@@ -94,16 +96,26 @@
 </script>
 
 <CustomCursor />
+
+<!-- Navigation is always visible -->
+<div class="fixed inset-0 z-[99999] pointer-events-none">
+  <div class="pointer-events-auto">
+    <Navigation {currentSection} />
+  </div>
+</div>
+
+<!-- Other UI elements that can fade -->
 {#if shouldShowUI}
-  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-[9999] {uiOpacityClass} pointer-events-auto"><Navigation {currentSection} /></div>
-  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-[9998] {uiOpacityClass} pointer-events-auto"><SideNavDots {currentSection} {scrollToSection} /></div>
-  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-[9997] {uiOpacityClass} pointer-events-auto"><Settings /></div>
+  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-[99998] {uiOpacityClass} pointer-events-auto"><SideNavDots {currentSection} {scrollToSection} /></div>
+  <div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} class="z-[99997] {uiOpacityClass} pointer-events-auto"><Settings /></div>
 {/if}
 
 <main>
   <HomeSection />
   <WorkSection />
   <EducationSection />
+  <CompaniesSection />
+  <ProductsSection />
   <ProjectsSection />
   <ContactSection />
 </main>

@@ -3,7 +3,7 @@
   export let scrollToSection;
   export let showUI = true;
 
-  const sections = ['home', 'work', 'education', 'projects', 'contact'];
+  const sections = ['home', 'work', 'education', 'companies', 'products', 'projects', 'contact'];
 </script>
 
 {#if showUI}

@@ -10,7 +10,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
 
 export function ContactSection() {
-  const { t } = useLanguage();
+  const { t, data } = useLanguage();
   const { theme } = useTheme();
   const [formData, setFormData] = useState({
     name: '',
@@ -19,68 +19,77 @@ export function ContactSection() {
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    console.log(`Input change - ${name}:`, value); // Debug log
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: value
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+
+    // Basic validation
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      alert('Please fill in all fields');
+      return;
+    }
+
+    // Create mailto link with form data
+    const subject = `Portfolio Contact - Message from ${formData.name}`;
+    const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message.replace(/\n/g, '%0D%0A')}`;
+    const mailtoLink = `mailto:${data.contact.info.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open email client
+    window.location.href = mailtoLink;
+
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
 
   const contactInfo = [
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@yourportfolio.com',
-      href: 'mailto:hello@yourportfolio.com',
+      value: data.contact.info.email,
+      href: `mailto:${data.contact.info.email}`,
       color: 'text-blue-500'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+62 123 456 7890',
-      href: 'tel:+621234567890',
+      value: data.contact.info.phone,
+      href: `tel:${data.contact.info.phone.replace(/\s/g, '')}`,
       color: 'text-purple-500'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Jakarta, Indonesia',
+      value: data.contact.info.location,
       href: '#',
       color: 'text-cyan-600'
     }
   ];
 
-  const socialLinks = [
-    {
-      icon: Github,
-      label: 'GitHub',
-      href: 'https://github.com',
-      color: 'hover:text-gray-600'
-    },
-    {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      href: 'https://linkedin.com',
-      color: 'hover:text-blue-600'
-    },
-    {
-      icon: Instagram,
-      label: 'Instagram',
-      href: 'https://instagram.com',
-      color: 'hover:text-pink-600'
-    },
-    {
-      icon: MessageCircle,
-      label: 'WhatsApp',
-      href: 'https://wa.me/621234567890',
-      color: 'hover:text-green-600'
-    }
-  ];
+  const socialLinks = data.contact.social.map(social => {
+    const iconMap = {
+      github: Github,
+      linkedin: Linkedin,
+      twitter: MessageCircle, // Using MessageCircle for Twitter since it's not imported
+      instagram: Instagram
+    };
+    return {
+      icon: iconMap[social.icon as keyof typeof iconMap] || Github,
+      label: social.name,
+      href: social.url,
+      color: 'hover:text-blue-600' // Default color
+    };
+  });
 
   const containerVariants = {
     hidden: {},
@@ -150,10 +159,10 @@ export function ContactSection() {
               </motion.div>
               
               <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4 text-center">
-                {t('contact_title')}
+                {data.contact.title}
               </h2>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
-                {t('contact_description')}
+                {data.contact.subtitle}
               </p>
             </motion.div>
 
@@ -279,14 +288,14 @@ export function ContactSection() {
                           whileInView={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.3 }}
                         >
-                          <Label htmlFor="name">{t('name')}</Label>
+                          <Label htmlFor="name">{data.contact.form.labels.name}</Label>
                           <motion.div whileFocus={{ scale: 1.01 }}>
                             <Input
                               id="name"
                               name="name"
                               value={formData.name}
                               onChange={handleInputChange}
-                              placeholder="Your name"
+                              placeholder={data.contact.form.placeholders.name}
                               required
                               className="mt-1 border-2 focus:border-blue-400 transition-colors"
                             />
@@ -298,7 +307,7 @@ export function ContactSection() {
                           whileInView={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.4 }}
                         >
-                          <Label htmlFor="email">{t('email')}</Label>
+                          <Label htmlFor="email">{data.contact.form.labels.email}</Label>
                           <motion.div whileFocus={{ scale: 1.01 }}>
                             <Input
                               id="email"
@@ -306,7 +315,7 @@ export function ContactSection() {
                               type="email"
                               value={formData.email}
                               onChange={handleInputChange}
-                              placeholder="your.email@example.com"
+                              placeholder={data.contact.form.placeholders.email}
                               required
                               className="mt-1 border-2 focus:border-blue-400 transition-colors"
                             />
@@ -319,16 +328,16 @@ export function ContactSection() {
                           transition={{ delay: 0.5 }}
                           className="flex-grow flex flex-col"
                         >
-                          <Label htmlFor="message">{t('message')}</Label>
+                          <Label htmlFor="message">{data.contact.form.labels.message}</Label>
                           <motion.div whileFocus={{ scale: 1.01 }} className="flex-grow">
                             <Textarea
                               id="message"
                               name="message"
                               value={formData.message}
                               onChange={handleInputChange}
-                              placeholder="Tell me about your project..."
+                              placeholder={data.contact.form.placeholders.message}
                               required
-                              className="mt-1 resize-none h-full min-h-[120px] border-2 focus:border-blue-400 transition-colors"
+                              className="mt-1 h-full min-h-[120px] border-2 focus:border-blue-400 transition-colors resize-none"
                             />
                           </motion.div>
                         </motion.div>
@@ -349,7 +358,7 @@ export function ContactSection() {
                               whileHover={{ x: -2 }}
                             >
                               <Send className="w-4 h-4 group-hover:rotate-12 transition-transform duration-200" />
-                              {t('send_message')}
+                              {data.contact.form.submitButton}
                             </motion.span>
                             <motion.div
                               className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent"
@@ -432,6 +441,9 @@ export function ContactSection() {
                       <Button 
                         size="lg" 
                         className="group relative overflow-hidden bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-cyan-600 hover:via-blue-600 hover:to-purple-600 text-white border-0 shadow-lg hover:shadow-2xl transition-all duration-300 px-8 py-3 text-lg min-w-[160px]"
+                        onClick={() => {
+                          window.location.href = `mailto:${data.contact.info.email}?subject=Portfolio Contact - Let's Talk`;
+                        }}
                       >
                         <motion.span 
                           className="relative z-10 flex items-center justify-center gap-3"

@@ -154,9 +154,9 @@ export const NavLogoLottie: React.FC<{
 // Section Header Logo Component (larger version)
 export const SectionLogoLottie: React.FC<{
   isDark?: boolean;
-  size?: 'md' | 'lg' | 'xl';
+  size?: 'sm' | 'md' | 'lg' | 'xl';
   className?: string;
-}> = ({ isDark = false, size = 'lg', className = "" }) => {
+}> = ({ isDark = false, size = 'sm', className = "" }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}

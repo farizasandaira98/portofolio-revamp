@@ -1,0 +1,434 @@
+{
+	"en": {
+		"title": "Projects",
+		"subtitle": "Open source projects and personal developments",
+		"viewProject": "View Project",
+		"items": [
+			{
+				"title": "HNI Kiosk",
+				"description": "Backend Engineer for a kiosk platform, building APIs and business logic.",
+				"association": "Freelance",
+				"role": "Backend Engineer",
+				"duration": "Jan 2025 - Present",
+				"technologies": ["Go", "GORM"],
+				"year": "2025",
+				"status": "Freelance"
+			},
+			{
+				"title": "Silo Platform Dashboard",
+				"description": "Freelance dashboard for Silo Platform.",
+				"association": "Freelance",
+				"duration": "Jan 2025 - Present",
+				"demo": "https://silo-dashboard-one.vercel.app/",
+				"year": "2025",
+				"status": "Freelance"
+			},
+			{
+				"title": "AB-API",
+				"description": "Backend Engineer maintaining an API for a payment platform.",
+				"association": "Freelance",
+				"role": "Backend Engineer",
+				"duration": "Aug 2024 - Present",
+				"technologies": ["Go", "GORM", "Nginx", "Docker"],
+				"year": "2024",
+				"status": "Freelance"
+			},
+			{
+				"title": "AB-OpenApi",
+				"description": "Backend Engineer developing a payment gateway.",
+				"association": "Freelance",
+				"role": "Backend Engineer",
+				"duration": "Apr 2024 - Present",
+				"technologies": ["MySQL", "Express.js", "Payment Gateways"],
+				"year": "2024",
+				"status": "Freelance"
+			},
+			{
+				"title": "AB Platform Dashboard",
+				"description": "Frontend Developer for landing page and dashboard maintenance.",
+				"association": "Freelance",
+				"role": "Frontend Developer",
+				"duration": "Jan 2024 - Present",
+				"technologies": ["Next.js", "Tanstack"],
+				"demo": "https://aksesbayar.com/",
+				"year": "2024",
+				"status": "Freelance"
+			},
+			{
+				"title": "Hija (Umrah Haji Tracker)",
+				"description": "Front-End Web Developer for Umrah/Haji applicant tracking dashboard.",
+				"association": "TSM TECHNOLOGIES",
+				"role": "Front-End Web Developer",
+				"duration": "Jan 2023 - Present",
+				"technologies": [
+					"Applicant Tracking Systems",
+					"Bootstrap",
+					"TypeScript",
+					"React.js"
+				],
+				"demo": "https://dashboard.hijamaah.com/",
+				"year": "2023",
+				"status": "Full-Time"
+			},
+			{
+				"title": "Water Meter Platform (Ngalir)",
+				"description": "Front-End Web Developer for IoT water meter dashboard.",
+				"association": "TSM TECHNOLOGIES",
+				"role": "Front-End Web Developer",
+				"duration": "Aug 2022 - Present",
+				"technologies": [
+					"IoT",
+					"Bootstrap",
+					"Amazon DynamoDB",
+					"AWS IoT",
+					"React.js",
+					"AWS Lambda",
+					"Go"
+				],
+				"year": "2022",
+				"status": "Full-Time"
+			},
+			{
+				"title": "SIG Accounting Platform",
+				"description": "Backend and Frontend Developer for accounting platform.",
+				"association": "Freelance",
+				"role": "Backend & Frontend Developer",
+				"duration": "Jan 2025 - May 2025",
+				"technologies": [
+					"Laravel",
+					"React.ts",
+					"Tanstack",
+					"Eloquent",
+					"MySQL"
+				],
+				"year": "2025",
+				"status": "Freelance"
+			},
+			{
+				"title": "Salinity Detector API",
+				"description": "API for IoT salinity detector.",
+				"association": "Freelance",
+				"duration": "Jan 2024",
+				"technologies": ["Express.js"],
+				"repo": "https://gitlab.com/muhfariza98/salinity-detector-iot",
+				"year": "2024",
+				"status": "Freelance"
+			},
+			{
+				"title": "Aplikasi Rajin Zikir",
+				"description": "Android-based Tasbih app to facilitate worship, with added prayers.",
+				"association": "Universitas Teknologi Digital Indonesia",
+				"technologies": ["Kotlin"],
+				"repo": "https://github.com/farizasandaira98/Aplikasi-Rajin-Zikir-",
+				"status": "Academic"
+			},
+			{
+				"title": "PPOB (Ngisi)",
+				"description": "Fullstack Web Developer for PPOB platform.",
+				"association": "TSM TECHNOLOGIES",
+				"role": "Fullstack Web Developer",
+				"technologies": ["Bootstrap", "React.js", "Go"],
+				"status": "Full-Time"
+			},
+			{
+				"title": "Revamp Website HMJ TI Akakom",
+				"description": "Revamp of official website for Computer Science Student Association.",
+				"association": "Universitas Teknologi Digital Indonesia",
+				"technologies": ["Laravel", "PHP", "Bootstrap", "MySQL"],
+				"repo": "https://github.com/farizasandaira98/webhmjti",
+				"status": "Academic"
+			},
+			{
+				"title": "Sistem Monitoring Dan Reporting PKK Kecamatan Bantul",
+				"description": "Final project for Informatics degree.",
+				"association": "Universitas Teknologi Digital Indonesia",
+				"technologies": ["Laravel", "MySQL", "Bootstrap"],
+				"repo": "https://github.com/farizasandaira98/ppkrev",
+				"status": "Academic"
+			},
+			{
+				"title": "Sistem Peminjaman Ruangan Rapat Dinas PUP ESDM DIY",
+				"description": "Room booking system for government office.",
+				"association": "Freelance",
+				"technologies": ["Laravel", "PHP", "MySQL"],
+				"repo": "https://github.com/farizasandaira98/peminjaman_ruangan",
+				"status": "Freelance"
+			},
+			{
+				"title": "Sistem Pencarian Buku Perpustakaan",
+				"description": "Library book search system.",
+				"association": "Freelance",
+				"technologies": ["CI-4", "Bootstrap", "MySQL"],
+				"repo": "https://github.com/farizasandaira98/perpus",
+				"status": "Freelance"
+			},
+			{
+				"title": "Sistem Pendukung Keputusan Pada Website Wisata Gorontalo",
+				"description": "Decision support system for Gorontalo tourism website.",
+				"association": "Freelance",
+				"technologies": ["Laravel", "PHP", "MySQL", "Bootstrap"],
+				"repo": "https://github.com/farizasandaira98/webwisatagorontalospk",
+				"status": "Freelance"
+			},
+			{
+				"title": "TMS-Revamp",
+				"description": "Front-End Web Developer for TMS platform revamp.",
+				"association": "TSM TECHNOLOGIES",
+				"role": "Front-End Web Developer",
+				"technologies": ["TypeScript", "React.js", "Go"],
+				"status": "Full-Time"
+			},
+			{
+				"title": "Website Penjualan Ikan",
+				"description": "E-commerce platform for fish trading.",
+				"association": "Freelance",
+				"technologies": ["PHP", "Laravel", "MySQL", "Bootstrap"],
+				"repo": "https://github.com/farizasandaira98/jualikan",
+				"status": "Freelance"
+			},
+			{
+				"title": "Website Tabungan Siswa",
+				"description": "Student savings management website.",
+				"association": "Freelance",
+				"technologies": ["MySQL", "Laravel", "PHP", "Bootstrap"],
+				"repo": "https://github.com/farizasandaira98/tabungansiswa",
+				"status": "Freelance"
+			},
+			{
+				"title": "Website Travel Karo",
+				"description": "Travel agency website for Karo region.",
+				"association": "Freelance",
+				"technologies": ["Laravel", "MySQL", "PHP"],
+				"repo": "https://github.com/farizasandaira98/webwisatakaro",
+				"status": "Freelance"
+			},
+			{
+				"title": "backend-express",
+				"description": "A project for learning backend development with Express.",
+				"technologies": [
+					"Express.js",
+					"Back-End Web Development",
+					"JavaScript"
+				],
+				"repo": "https://github.com/farizasandaira98/backend-express",
+				"status": "Learning"
+			}
+		]
+	},
+	"id": {
+		"title": "Proyek",
+		"subtitle": "Proyek open source dan pengembangan personal",
+		"viewProject": "Lihat Proyek",
+		"items": [
+			{
+				"title": "HNI Kiosk",
+				"description": "Backend Engineer untuk platform kiosk, membangun API dan logika bisnis.",
+				"association": "Freelance",
+				"role": "Backend Engineer",
+				"duration": "Jan 2025 - Sekarang",
+				"technologies": ["Go", "GORM"],
+				"year": "2025",
+				"status": "Freelance"
+			},
+			{
+				"title": "Silo Platform Dashboard",
+				"description": "Dashboard freelance untuk Silo Platform.",
+				"association": "Freelance",
+				"duration": "Jan 2025 - Sekarang",
+				"demo": "https://silo-dashboard-one.vercel.app/",
+				"year": "2025",
+				"status": "Freelance"
+			},
+			{
+				"title": "AB-API",
+				"description": "Backend Engineer memelihara API untuk platform pembayaran.",
+				"association": "Freelance",
+				"role": "Backend Engineer",
+				"duration": "Agu 2024 - Sekarang",
+				"technologies": ["Go", "GORM", "Nginx", "Docker"],
+				"year": "2024",
+				"status": "Freelance"
+			},
+			{
+				"title": "AB-OpenApi",
+				"description": "Backend Engineer mengembangkan payment gateway.",
+				"association": "Freelance",
+				"role": "Backend Engineer",
+				"duration": "Apr 2024 - Sekarang",
+				"technologies": ["MySQL", "Express.js", "Payment Gateways"],
+				"year": "2024",
+				"status": "Freelance"
+			},
+			{
+				"title": "AB Platform Dashboard",
+				"description": "Frontend Developer untuk landing page dan maintenance dashboard.",
+				"association": "Freelance",
+				"role": "Frontend Developer",
+				"duration": "Jan 2024 - Sekarang",
+				"technologies": ["Next.js", "Tanstack"],
+				"demo": "https://aksesbayar.com/",
+				"year": "2024",
+				"status": "Freelance"
+			},
+			{
+				"title": "Hija (Umrah Haji Tracker)",
+				"description": "Front-End Web Developer untuk dashboard pelacakan jamaah Umrah/Haji.",
+				"association": "TSM TECHNOLOGIES",
+				"role": "Front-End Web Developer",
+				"duration": "Jan 2023 - Sekarang",
+				"technologies": [
+					"Applicant Tracking Systems",
+					"Bootstrap",
+					"TypeScript",
+					"React.js"
+				],
+				"demo": "https://dashboard.hijamaah.com/",
+				"year": "2023",
+				"status": "Full-Time"
+			},
+			{
+				"title": "Water Meter Platform (Ngalir)",
+				"description": "Front-End Web Developer untuk dashboard IoT water meter.",
+				"association": "TSM TECHNOLOGIES",
+				"role": "Front-End Web Developer",
+				"duration": "Agu 2022 - Sekarang",
+				"technologies": [
+					"IoT",
+					"Bootstrap",
+					"Amazon DynamoDB",
+					"AWS IoT",
+					"React.js",
+					"AWS Lambda",
+					"Go"
+				],
+				"year": "2022",
+				"status": "Full-Time"
+			},
+			{
+				"title": "SIG Accounting Platform",
+				"description": "Backend dan Frontend Developer untuk platform akuntansi.",
+				"association": "Freelance",
+				"role": "Backend & Frontend Developer",
+				"duration": "Jan 2025 - Mei 2025",
+				"technologies": [
+					"Laravel",
+					"React.ts",
+					"Tanstack",
+					"Eloquent",
+					"MySQL"
+				],
+				"year": "2025",
+				"status": "Freelance"
+			},
+			{
+				"title": "Salinity Detector API",
+				"description": "API untuk IoT salinity detector.",
+				"association": "Freelance",
+				"duration": "Jan 2024",
+				"technologies": ["Express.js"],
+				"repo": "https://gitlab.com/muhfariza98/salinity-detector-iot",
+				"year": "2024",
+				"status": "Freelance"
+			},
+			{
+				"title": "Aplikasi Rajin Zikir",
+				"description": "Aplikasi Tasbih berbasis Android untuk memudahkan ibadah, dengan tambahan doa.",
+				"association": "Universitas Teknologi Digital Indonesia",
+				"technologies": ["Kotlin"],
+				"repo": "https://github.com/farizasandaira98/Aplikasi-Rajin-Zikir-",
+				"status": "Akademik"
+			},
+			{
+				"title": "PPOB (Ngisi)",
+				"description": "Fullstack Web Developer untuk platform PPOB.",
+				"association": "TSM TECHNOLOGIES",
+				"role": "Fullstack Web Developer",
+				"technologies": ["Bootstrap", "React.js", "Go"],
+				"status": "Full-Time"
+			},
+			{
+				"title": "Revamp Website HMJ TI Akakom",
+				"description": "Revamp website resmi Himpunan Mahasiswa Jurusan Teknik Informatika.",
+				"association": "Universitas Teknologi Digital Indonesia",
+				"technologies": ["Laravel", "PHP", "Bootstrap", "MySQL"],
+				"repo": "https://github.com/farizasandaira98/webhmjti",
+				"status": "Akademik"
+			},
+			{
+				"title": "Sistem Monitoring Dan Reporting PKK Kecamatan Bantul",
+				"description": "Proyek akhir untuk gelar Informatika.",
+				"association": "Universitas Teknologi Digital Indonesia",
+				"technologies": ["Laravel", "MySQL", "Bootstrap"],
+				"repo": "https://github.com/farizasandaira98/ppkrev",
+				"status": "Akademik"
+			},
+			{
+				"title": "Sistem Peminjaman Ruangan Rapat Dinas PUP ESDM DIY",
+				"description": "Sistem pemesanan ruangan untuk kantor pemerintah.",
+				"association": "Freelance",
+				"technologies": ["Laravel", "PHP", "MySQL"],
+				"repo": "https://github.com/farizasandaira98/peminjaman_ruangan",
+				"status": "Freelance"
+			},
+			{
+				"title": "Sistem Pencarian Buku Perpustakaan",
+				"description": "Sistem pencarian buku perpustakaan.",
+				"association": "Freelance",
+				"technologies": ["CI-4", "Bootstrap", "MySQL"],
+				"repo": "https://github.com/farizasandaira98/perpus",
+				"status": "Freelance"
+			},
+			{
+				"title": "Sistem Pendukung Keputusan Pada Website Wisata Gorontalo",
+				"description": "Sistem pendukung keputusan untuk website wisata Gorontalo.",
+				"association": "Freelance",
+				"technologies": ["Laravel", "PHP", "MySQL", "Bootstrap"],
+				"repo": "https://github.com/farizasandaira98/webwisatagorontalospk",
+				"status": "Freelance"
+			},
+			{
+				"title": "TMS-Revamp",
+				"description": "Front-End Web Developer untuk revamp platform TMS.",
+				"association": "TSM TECHNOLOGIES",
+				"role": "Front-End Web Developer",
+				"technologies": ["TypeScript", "React.js", "Go"],
+				"status": "Full-Time"
+			},
+			{
+				"title": "Website Penjualan Ikan",
+				"description": "Platform e-commerce untuk perdagangan ikan.",
+				"association": "Freelance",
+				"technologies": ["PHP", "Laravel", "MySQL", "Bootstrap"],
+				"repo": "https://github.com/farizasandaira98/jualikan",
+				"status": "Freelance"
+			},
+			{
+				"title": "Website Tabungan Siswa",
+				"description": "Website manajemen tabungan siswa.",
+				"association": "Freelance",
+				"technologies": ["MySQL", "Laravel", "PHP", "Bootstrap"],
+				"repo": "https://github.com/farizasandaira98/tabungansiswa",
+				"status": "Freelance"
+			},
+			{
+				"title": "Website Travel Karo",
+				"description": "Website travel agency untuk wilayah Karo.",
+				"association": "Freelance",
+				"technologies": ["Laravel", "MySQL", "PHP"],
+				"repo": "https://github.com/farizasandaira98/webwisatakaro",
+				"status": "Freelance"
+			},
+			{
+				"title": "backend-express",
+				"description": "Proyek belajar backend development dengan Express.",
+				"technologies": [
+					"Express.js",
+					"Back-End Web Development",
+					"JavaScript"
+				],
+				"repo": "https://github.com/farizasandaira98/backend-express",
+				"status": "Belajar"
+			}
+		]
+	}
+}

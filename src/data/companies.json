@@ -1,0 +1,176 @@
+{
+  "en": {
+    "title": "Companies",
+    "subtitle": "Organizations I've worked with",
+    "companies": [
+        {
+        "name": "PT. Gerbang Teknologi Nasional (AksesBayar)",
+        "logo": "/src/assets/products/ngalir.svg",
+        "description": "Fintech company providing payment gateway and merchant aggregator services.",
+        "website": "https://aksesbayar.com",
+        "collaboration": "Freelance Fullstack Developer / Full-time Fullstack Developer",
+        "period": "2024 - Present",
+        "projects": ["Payment Gateway Platform", "Merchant Aggregator", "API Integration"]
+      },
+      {
+        "name": "PT. Loadgic Primaveda Nusantara (Loadgic)",
+        "logo": "/src/assets/products/loadgic.png",
+        "description": "Research and development company focusing on Silo meter and Volumetric measurement solutions.",
+        "website": "https://loadgic.com",
+        "collaboration": "Freelance Fullstack Developer",
+        "period": "2025 - Present",
+        "projects": ["Research And Development", "IoT Solutions", "Silo Meter Applications", "Volumetric Measurement"]
+      },
+      {
+        "name": "PT. HPAI Halal Network International (HNI)",
+        "logo": "/src/assets/products/hni.png",
+        "description": "leading Halal Network business in Indonesia, focused on providing high-quality halal consumer goods. Officially established on March 19, 2012, HPAI is dedicated to promoting Thibbunnabawi principles, advancing Islamic economics through entrepreneurship, and empowering national MSMEs.",
+        "website": "https://hni.net",
+        "collaboration": "Freelance Backend Developer",
+        "period": "2025 - Present",
+        "projects": ["Point Of Sales System", "Stock Management"]
+      },
+      {
+        "name": "PT Tata Sarana Mandiri (TSM Technology)",
+        "logo": "/src/assets/products/tsm.png",
+        "description": "Company focused on research and development, iot solutions, fintech service, and healthcare technology.",
+        "website": "https://tsmid.com",
+        "collaboration": "Full-time Software Engineer",
+        "period": "2022 - 2025",
+        "projects": ["Research And Development", "IoT Solutions", "Fintech Services", "Healthcare Technology", "Water Meter", "Tracker Device", "Merchant Aggregator", "Payment Point Online Bank", "Terminal Management System"]
+      },
+      {
+        "name": "PT. Semen Indonesia Tbk (SIG)",
+        "logo": "/src/assets/products/SIG_Logo.svg",
+        "description": "One of Indonesia's largest cement manufacturers with digital transformation initiatives.",
+        "website": "https://sig.id",
+        "collaboration": "Freelance Fullstack Developer",
+        "period": "2025 - 2025",
+        "projects": ["Financial System"]
+      },
+      {
+        "name": "Department of Public Works, Housing, and Mineral Resources Energy of Yogyakarta Special Region",
+        "logo": "/src/assets/products/provdiy.png",
+        "description": "Government agency responsible for public works and energy in Yogyakarta Special Region.",
+        "website": "https://dpupesdm.jogjaprov.go.id",
+        "collaboration": "IT Consultant",
+        "period": "2021 - 2021",
+        "projects": ["Irrigation System Documentation", "Network Infrastructure", "Government Digitalization"]
+      },
+      {
+        "name": "STMIK Akakom Yogyakarta (Change to Universitas Teknologi Digital Indonesia)",
+        "logo": "/src/assets/products/utdi.png",
+        "description": "Technology university in Yogyakarta focused on engineering and computer science education.",
+        "website": "https://www.utdi.ac.id/",
+        "collaboration": "Teaching Assistant",
+        "period": "2018 - 2019",
+        "projects": ["Web Development Courses", "Student Mentoring", "Curriculum Development"]
+      },
+      {
+        "name": "Department of Population and Civil Registration of Yogyakarta City",
+        "logo": "/src/assets/products/kotayogya.png",
+        "description": "Government agency responsible for managing population data, civil registration, and public administration services in Yogyakarta City.",
+        "website": "https://dindukcapil.jogjakota.go.id",
+        "collaboration": "IT Support (Internship)",
+        "period": "2018 - 2019",
+        "projects": ["Web Registation KIA (Kartu Identitas Anak)", "Network Management And Infrastructure", "Curriculum Development", "Content Management"]
+      },
+      {
+        "name": "Sutan Raja Hotel & Convention Palu",
+        "logo": "/src/assets/products/sutanraja.png",
+        "description": "One of biggest hotel in Palu City, Central Sulawesi, Indonesia.",
+        "website": "https://www.instagram.com/sutanrajahotelpalu/?hl=en",
+        "collaboration": "IT Support (Internship)",
+        "period": "2016 - 2016",
+        "projects": ["Landing Page", "Internet Management", "Mikrotik Configuration", "Network Infrastructure", "Ubiquiti Configuration", "Windows Server Management"]
+      }
+    ]
+  },
+  "id": {
+    "title": "Perusahaan",
+    "subtitle": "Organisasi yang pernah bekerja sama dengan saya",
+    "companies": [
+      {
+        "name": "PT. Gerbang Teknologi Nasional (AksesBayar)",
+        "logo": "/src/assets/products/ngalir.svg",
+        "description": "Perusahaan fintech yang menyediakan layanan payment gateway dan agregator merchant.",
+        "website": "https://aksesbayar.com",
+        "collaboration": "Freelance Fullstack Developer / Full-time Fullstack Developer",
+        "period": "2024 - Sekarang",
+        "projects": ["Platform Payment Gateway", "Merchant Aggregator", "Integrasi API"]
+      },
+      {
+        "name": "PT. Loadgic Primaveda Nusantara (Loadgic)",
+        "logo": "/src/assets/products/loadgic.png",
+        "description": "Perusahaan riset dan pengembangan yang berfokus pada solusi Silo meter dan pengukuran volumetrik.",
+        "website": "https://loadgic.com",
+        "collaboration": "Freelance Fullstack Developer",
+        "period": "2025 - Sekarang",
+        "projects": ["Riset dan Pengembangan", "Solusi IoT", "Aplikasi Silo Meter", "Pengukuran Volumetrik"]
+      },
+      {
+        "name": "PT. HPAI Halal Network International (HNI)",
+        "logo": "/src/assets/products/hni.png",
+        "description": "Bisnis jaringan halal terkemuka di Indonesia, fokus pada produk konsumen halal berkualitas tinggi. Berdiri sejak 19 Maret 2012, HPAI berkomitmen pada prinsip Thibbunnabawi, pengembangan ekonomi syariah, dan pemberdayaan UMKM nasional.",
+        "website": "https://hni.net",
+        "collaboration": "Freelance Backend Developer",
+        "period": "2025 - Sekarang",
+        "projects": ["Sistem Point Of Sales", "Manajemen Stok"]
+      },
+      {
+        "name": "PT Tata Sarana Mandiri (TSM Technology)",
+        "logo": "/src/assets/products/tsm.png",
+        "description": "Perusahaan yang berfokus pada riset dan pengembangan, solusi IoT, layanan fintech, dan teknologi kesehatan.",
+        "website": "https://tsmid.com",
+        "collaboration": "Full-time Software Engineer",
+        "period": "2022 - 2025",
+        "projects": ["Riset dan Pengembangan", "Solusi IoT", "Layanan Fintech", "Teknologi Kesehatan", "Water Meter", "Tracker Device", "Merchant Aggregator", "Payment Point Online Bank", "Terminal Management System"]
+      },
+      {
+        "name": "PT. Semen Indonesia Tbk (SIG)",
+        "logo": "/src/assets/products/SIG_Logo.svg",
+        "description": "Salah satu produsen semen terbesar di Indonesia dengan inisiatif transformasi digital.",
+        "website": "https://sig.id",
+        "collaboration": "Freelance Fullstack Developer",
+        "period": "2025 - 2025",
+        "projects": ["Sistem Keuangan"]
+      },
+      {
+        "name": "Dinas Pekerjaan Umum, Perumahan, dan Energi Sumber Daya Mineral Daerah Istimewa Yogyakarta",
+        "logo": "/src/assets/products/provdiy.png",
+        "description": "Instansi pemerintah yang bertanggung jawab atas pekerjaan umum dan energi di Daerah Istimewa Yogyakarta.",
+        "website": "https://dpupesdm.jogjaprov.go.id",
+        "collaboration": "Konsultan IT",
+        "period": "2021 - 2021",
+        "projects": ["Dokumentasi Sistem Irigasi", "Infrastruktur Jaringan", "Digitalisasi Pemerintahan"]
+      },
+      {
+        "name": "STMIK Akakom Yogyakarta (sekarang Universitas Teknologi Digital Indonesia)",
+        "logo": "/src/assets/products/utdi.png",
+        "description": "Universitas teknologi di Yogyakarta yang fokus pada pendidikan teknik dan ilmu komputer.",
+        "website": "https://www.utdi.ac.id/",
+        "collaboration": "Asisten Dosen",
+        "period": "2018 - 2019",
+        "projects": ["Mata Kuliah Pengembangan Web", "Mentoring Mahasiswa", "Pengembangan Kurikulum"]
+      },
+      {
+        "name": "Dinas Kependudukan dan Pencatatan Sipil Kota Yogyakarta",
+        "logo": "/src/assets/products/kotayogya.png",
+        "description": "Instansi pemerintah yang mengelola data kependudukan, pencatatan sipil, dan layanan administrasi publik di Kota Yogyakarta.",
+        "website": "https://dindukcapil.jogjakota.go.id",
+        "collaboration": "IT Support (Magang)",
+        "period": "2018 - 2019",
+        "projects": ["Web Registrasi KIA (Kartu Identitas Anak)", "Manajemen dan Infrastruktur Jaringan", "Pengembangan Kurikulum", "Manajemen Konten"]
+      },
+      {
+        "name": "Sutan Raja Hotel & Convention Palu",
+        "logo": "/src/assets/products/sutanraja.png",
+        "description": "Salah satu hotel terbesar di Kota Palu, Sulawesi Tengah, Indonesia.",
+        "website": "https://www.instagram.com/sutanrajahotelpalu/?hl=en",
+        "collaboration": "IT Support (Magang)",
+        "period": "2016 - 2016",
+        "projects": ["Landing Page", "Manajemen Internet", "Konfigurasi Mikrotik", "Infrastruktur Jaringan", "Konfigurasi Ubiquiti", "Manajemen Windows Server"]
+      }
+    ]
+  }
+}

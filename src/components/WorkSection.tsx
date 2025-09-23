@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { Folder, ExternalLink, Github, Eye, Filter } from 'lucide-react';
+import React from 'react';
+import { motion } from 'motion/react';
+import { Folder, ExternalLink, Github, Eye } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
@@ -8,89 +8,9 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export function WorkSection() {
-  const { t } = useLanguage();
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const { t, data } = useLanguage();
 
-  const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      category: "fullstack",
-      description: "A modern e-commerce platform with advanced features including real-time inventory, payment processing, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1694599048261-a1de00f0117e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc1ODQ2OTIyN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      category: "frontend",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1642132652803-01f9738d0446?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbiUyMGRlc2lnbnxlbnwxfHx8fDE3NTg0NzA3NDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true
-    },
-    {
-      id: 3,
-      title: "Mobile Banking App",
-      category: "mobile",
-      description: "A secure mobile banking application with biometric authentication, transaction history, and budget tracking features.",
-      image: "https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU4NDQ2MTg4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      technologies: ["React Native", "TypeScript", "Redux", "Firebase"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Portfolio Website",
-      category: "frontend",
-      description: "A responsive portfolio website showcasing creative work with smooth animations and modern design principles.",
-      image: "https://images.unsplash.com/photo-1642132652803-01f9738d0446?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbiUyMGRlc2lnbnxlbnwxfHx8fDE3NTg0NzA3NDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "API Management System",
-      category: "backend",
-      description: "A comprehensive API management system with authentication, rate limiting, analytics, and documentation.",
-      image: "https://images.unsplash.com/photo-1642132652803-01f9738d0446?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbiUyMGRlc2lnbnxlbnwxfHx8fDE3NTg0NzA3NDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      technologies: ["Node.js", "Express", "MongoDB", "Redis", "Docker"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 6,
-      title: "Social Media Dashboard",
-      category: "fullstack",
-      description: "A comprehensive social media management dashboard with analytics, scheduling, and multi-platform integration.",
-      image: "https://images.unsplash.com/photo-1694599048261-a1de00f0117e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc1ODQ2OTIyN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      technologies: ["Vue.js", "Laravel", "MySQL", "Chart.js", "Socket.io"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    }
-  ];
-
-  const categories = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'frontend', label: 'Frontend' },
-    { id: 'backend', label: 'Backend' },
-    { id: 'fullstack', label: 'Full Stack' },
-    { id: 'mobile', label: 'Mobile' }
-  ];
-
-  const filteredProjects = selectedCategory === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === selectedCategory);
+  const projects = data.projects.items;
 
   const containerVariants = {
     hidden: {},
@@ -135,58 +55,25 @@ export function WorkSection() {
               </motion.div>
               
               <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4 text-center">
-                {t('work_title')}
+                {data.projects.title}
               </h2>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
-                {t('work_description')}
+                {data.projects.subtitle}
               </p>
             </motion.div>
 
-            {/* Category Filter */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 px-4"
-            >
-              {categories.map((category, index) => (
-                <motion.button
-                  key={category.id}
-                  onClick={() => setSelectedCategory(category.id)}
-                  className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full transition-all duration-300 text-sm sm:text-base ${
-                    selectedCategory === category.id
-                      ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg'
-                      : 'bg-accent hover:bg-accent/80 text-muted-foreground hover:text-foreground'
-                  }`}
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <motion.div className="flex items-center gap-2">
-                    <Filter className="w-3 h-3 sm:w-4 sm:h-4" />
-                    <span className="whitespace-nowrap">{category.label}</span>
-                  </motion.div>
-                </motion.button>
-              ))}
-            </motion.div>
-
             {/* Projects Grid */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={selectedCategory}
-                variants={containerVariants}
+            <motion.div
+              variants={containerVariants}
                 initial="hidden"
                 animate="visible"
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
               >
-                {filteredProjects.map((project, index) => (
+                {projects.map((project) => (
                   <motion.div
-                    key={project.id}
+                    key={project.title + (project.year || '')}
                     variants={itemVariants}
                     layout
-                    className={`${project.featured ? 'sm:col-span-2 lg:col-span-1' : ''}`}
                   >
                     <motion.div
                       whileHover={{ y: -10, scale: 1.02 }}
@@ -200,51 +87,41 @@ export function WorkSection() {
                             transition={{ duration: 0.6 }}
                           >
                             <ImageWithFallback
-                              src={project.image}
+                              src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RlJTIwcHJvamVjdHxlbnwxfHx8fDE3NTg0NzA3NDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
                               alt={project.title}
                               className="w-full h-32 sm:h-40 lg:h-48 object-cover"
                             />
                           </motion.div>
-                          
                           {/* Overlay */}
                           <motion.div
                             className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 sm:gap-4"
                             initial={{ opacity: 0 }}
                             whileHover={{ opacity: 1 }}
                           >
-                            <motion.a
-                              href={project.liveUrl}
-                              className="p-2 sm:p-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-white hover:from-cyan-600 hover:to-blue-600 transition-colors shadow-lg"
-                              whileHover={{ scale: 1.1, rotate: 5 }}
-                              whileTap={{ scale: 0.9 }}
-                            >
-                              <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
-                            </motion.a>
-                            <motion.a
-                              href={project.githubUrl}
-                              className="p-2 sm:p-3 bg-accent rounded-full text-accent-foreground hover:bg-accent/80 transition-colors shadow-lg"
-                              whileHover={{ scale: 1.1, rotate: -5 }}
-                              whileTap={{ scale: 0.9 }}
-                            >
-                              <Github className="w-4 h-4 sm:w-5 sm:h-5" />
-                            </motion.a>
+                            {project.demo && (
+                              <motion.a
+                                href={project.demo}
+                                className="p-2 sm:p-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-white hover:from-cyan-600 hover:to-blue-600 transition-colors shadow-lg"
+                                whileHover={{ scale: 1.1, rotate: 5 }}
+                                whileTap={{ scale: 0.9 }}
+                                target="_blank" rel="noopener noreferrer"
+                              >
+                                <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
+                              </motion.a>
+                            )}
+                            {project.repo && (
+                              <motion.a
+                                href={project.repo}
+                                className="p-2 sm:p-3 bg-gradient-to-r from-gray-700 to-gray-800 rounded-full text-white hover:from-gray-800 hover:to-gray-900 transition-colors shadow-lg"
+                                whileHover={{ scale: 1.1, rotate: -5 }}
+                                whileTap={{ scale: 0.9 }}
+                                target="_blank" rel="noopener noreferrer"
+                              >
+                                <Github className="w-4 h-4 sm:w-5 sm:h-5" />
+                              </motion.a>
+                            )}
                           </motion.div>
-
-                          {/* Featured Badge */}
-                          {project.featured && (
-                            <motion.div
-                              className="absolute top-3 sm:top-4 right-3 sm:right-4"
-                              initial={{ opacity: 0, scale: 0 }}
-                              animate={{ opacity: 1, scale: 1 }}
-                              transition={{ delay: 0.3 }}
-                            >
-                              <Badge className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-0 text-xs shadow-lg">
-                                Featured
-                              </Badge>
-                            </motion.div>
-                          )}
                         </div>
-
                         <CardContent className="p-4 sm:p-6 flex flex-col h-full">
                           <motion.h3
                             className="text-lg sm:text-xl mb-2 sm:mb-3"
@@ -254,7 +131,6 @@ export function WorkSection() {
                           >
                             {project.title}
                           </motion.h3>
-
                           <motion.p
                             className="text-muted-foreground mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base flex-grow"
                             initial={{ opacity: 0, y: 10 }}
@@ -263,31 +139,53 @@ export function WorkSection() {
                           >
                             {project.description}
                           </motion.p>
-
-                          {/* Technologies */}
+                          {/* Association, Role, Duration */}
                           <motion.div
-                            className="mb-3 sm:mb-4"
+                            className="flex flex-wrap gap-2 mb-3 sm:mb-4 text-xs text-muted-foreground"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
-                            transition={{ delay: 0.4 }}
+                            transition={{ delay: 0.35 }}
                           >
-                            <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                              {project.technologies.map((tech, techIndex) => (
-                                <motion.div
-                                  key={techIndex}
-                                  initial={{ opacity: 0, scale: 0 }}
-                                  whileInView={{ opacity: 1, scale: 1 }}
-                                  transition={{ delay: 0.5 + techIndex * 0.05 }}
-                                  whileHover={{ scale: 1.05, y: -1 }}
-                                >
-                                  <Badge variant="secondary" className="text-xs">
-                                    {tech}
-                                  </Badge>
-                                </motion.div>
-                              ))}
-                            </div>
+                            {project.association && <span><b>{project.association}</b></span>}
+                            {project.role && <span>{project.role}</span>}
+                            {project.duration && <span>{project.duration}</span>}
                           </motion.div>
-
+                          {/* Year and Status */}
+                          <motion.div
+                            className="flex items-center gap-2 mb-3 sm:mb-4"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ delay: 0.36 }}
+                          >
+                            {project.year && <Badge variant="outline" className="text-xs">{project.year}</Badge>}
+                            {project.status && <Badge variant="outline" className="text-xs text-green-600 border-green-600">{project.status}</Badge>}
+                          </motion.div>
+                          {/* Technologies */}
+                          {project.technologies && (
+                            <motion.div
+                              className="mb-3 sm:mb-4"
+                              initial={{ opacity: 0 }}
+                              whileInView={{ opacity: 1 }}
+                              transition={{ delay: 0.5 }}
+                            >
+                              <h4 className="text-xs sm:text-sm mb-2 text-muted-foreground">Tech Stack:</h4>
+                              <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                                {project.technologies.map((tech, techIndex) => (
+                                  <motion.div
+                                    key={tech + techIndex}
+                                    initial={{ opacity: 0, scale: 0 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    transition={{ delay: 0.55 + techIndex * 0.05 }}
+                                    whileHover={{ scale: 1.05, y: -1 }}
+                                  >
+                                    <Badge variant="secondary" className="text-xs">
+                                      {tech}
+                                    </Badge>
+                                  </motion.div>
+                                ))}
+                              </div>
+                            </motion.div>
+                          )}
                           {/* Action Buttons */}
                           <motion.div
                             className="flex gap-2 sm:gap-3 mt-auto"
@@ -295,28 +193,34 @@ export function WorkSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6 }}
                           >
-                            <Button size="sm" className="flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 shadow-md" asChild>
-                              <motion.a
-                                href={project.liveUrl}
-                                whileHover={{ scale: 1.02 }}
-                                whileTap={{ scale: 0.98 }}
-                                className="flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm"
-                              >
-                                <Eye className="w-3 h-3 sm:w-4 sm:h-4" />
-                                <span className="hidden sm:inline">{t('view_project')}</span>
-                                <span className="sm:hidden">View</span>
-                              </motion.a>
-                            </Button>
-                            <Button size="sm" variant="outline" asChild>
-                              <motion.a
-                                href={project.githubUrl}
-                                whileHover={{ scale: 1.02, rotate: 2 }}
-                                whileTap={{ scale: 0.98 }}
-                                className="flex items-center justify-center px-2 sm:px-3"
-                              >
-                                <Github className="w-3 h-3 sm:w-4 sm:h-4" />
-                              </motion.a>
-                            </Button>
+                            {project.demo && (
+                              <Button size="sm" className="flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 shadow-md" asChild>
+                                <motion.a
+                                  href={project.demo}
+                                  whileHover={{ scale: 1.02 }}
+                                  whileTap={{ scale: 0.98 }}
+                                  className="flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm"
+                                  target="_blank" rel="noopener noreferrer"
+                                >
+                                  <Eye className="w-3 h-3 sm:w-4 sm:h-4" />
+                                  <span className="hidden sm:inline">{t('view_project')}</span>
+                                  <span className="sm:hidden">View</span>
+                                </motion.a>
+                              </Button>
+                            )}
+                            {project.repo && (
+                              <Button size="sm" variant="outline" asChild>
+                                <motion.a
+                                  href={project.repo}
+                                  whileHover={{ scale: 1.02, rotate: 2 }}
+                                  whileTap={{ scale: 0.98 }}
+                                  className="flex items-center justify-center px-2 sm:px-3"
+                                  target="_blank" rel="noopener noreferrer"
+                                >
+                                  <Github className="w-3 h-3 sm:w-4 sm:h-4" />
+                                </motion.a>
+                              </Button>
+                            )}
                           </motion.div>
                         </CardContent>
                       </Card>
@@ -324,7 +228,6 @@ export function WorkSection() {
                   </motion.div>
                 ))}
               </motion.div>
-            </AnimatePresence>
 
             {/* Background Decorations */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">

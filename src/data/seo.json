@@ -1,0 +1,72 @@
+{
+  "siteInfo": {
+    "name": "Muh Fariza",
+    "title": "Fullstack Developer Portfolio",
+    "description": "Professional portfolio of Muh Fariza - Experienced Fullstack Developer specializing in React, Svelte, Node.js, and cloud technologies. Creating innovative digital solutions and applications.",
+    "url": "https://farizasandaira.dev",
+    "image": "/og-image.jpg",
+    "keywords": [
+      "Fullstack Developer",
+      "React Developer",
+      "Svelte Developer",
+      "Node.js Developer",
+      "TypeScript Developer",
+      "AWS Developer",
+      "Web Developer",
+      "Frontend Developer",
+      "Backend Developer",
+      "JavaScript Developer",
+      "Indonesia Developer",
+      "Yogyakarta Developer",
+      "Fintech Developer",
+      "IoT Developer",
+      "Payment Gateway",
+      "Muh Fariza",
+      "Fariza Sandaira"
+    ],
+    "author": {
+      "name": "Muh Fariza",
+      "email": "farizasandaira98@gmail.com",
+      "github": "https://github.com/farizasandaira98",
+      "linkedin": "https://linkedin.com/in/farizasandaira",
+      "twitter": "https://twitter.com/farizasandaira"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muh Fariza",
+      "jobTitle": "Fullstack Developer",
+      "description": "Experienced Fullstack Developer specializing in React, Svelte, Node.js, and cloud technologies",
+      "url": "https://farizasandaira.dev",
+      "email": "farizasandaira98@gmail.com",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universitas Teknologi Yogyakarta"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "TSM Technology"
+      },
+      "sameAs": [
+        "https://github.com/farizasandaira98",
+        "https://linkedin.com/in/farizasandaira",
+        "https://twitter.com/farizasandaira"
+      ],
+      "knowsAbout": [
+        "React.js",
+        "Svelte",
+        "Node.js",
+        "TypeScript",
+        "JavaScript",
+        "AWS",
+        "PHP",
+        "Laravel",
+        "Next.js",
+        "Vue.js",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB"
+      ]
+    }
+  }
+}

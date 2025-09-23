@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
+import { GraduationCap, Calendar, Award } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export function EducationSection() {
-  const { t } = useLanguage();
+  const { t, data } = useLanguage();
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
@@ -19,36 +19,6 @@ export function EducationSection() {
     
     return () => window.removeEventListener('resize', checkTouchDevice);
   }, []);
-
-  const educationData = [
-    {
-      degree: "Master of Computer Science",
-      school: "University of Technology",
-      period: "2020 - 2022",
-      location: "Jakarta, Indonesia",
-      description: "Specialized in Artificial Intelligence and Machine Learning. Graduated Magna Cum Laude.",
-      achievements: ["Best Thesis Award", "Research Publication", "Teaching Assistant"],
-      gpa: "3.9/4.0"
-    },
-    {
-      degree: "Bachelor of Information Technology",
-      school: "State University",
-      period: "2016 - 2020",
-      location: "Bandung, Indonesia",
-      description: "Focused on Software Engineering and Web Development. Active in programming competitions.",
-      achievements: ["Dean's List", "Programming Contest Winner", "Tech Community Leader"],
-      gpa: "3.8/4.0"
-    },
-    {
-      degree: "High School - Science Track",
-      school: "Elite Senior High School",
-      period: "2013 - 2016",
-      location: "Surabaya, Indonesia",
-      description: "Mathematics and Physics specialization. Student council member.",
-      achievements: ["Mathematics Olympiad", "Science Fair Winner", "Student Council President"],
-      gpa: "92/100"
-    }
-  ];
 
   const containerVariants = {
     hidden: {},
@@ -93,10 +63,10 @@ export function EducationSection() {
               </motion.div>
               
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-center">
-                {t('education_title')}
+                {data.education.title}
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
-                {t('education_description')}
+                {data.education.subtitle}
               </p>
             </motion.div>
 
@@ -111,7 +81,7 @@ export function EducationSection() {
                 viewport={{ once: true }}
                 className="space-y-8 sm:space-y-10 md:space-y-16"
               >
-                {educationData.map((education, index) => (
+                {data.education.items.map((education, index) => (
                   <motion.div
                     key={index}
                     variants={itemVariants}
@@ -153,7 +123,7 @@ export function EducationSection() {
                                 whileInView={{ opacity: 1 }}
                                 transition={{ delay: 0.2 }}
                               >
-                                {education.degree}
+                                {education.title}
                               </motion.h3>
                               
                               <motion.p
@@ -162,7 +132,7 @@ export function EducationSection() {
                                 whileInView={{ opacity: 1 }}
                                 transition={{ delay: 0.3 }}
                               >
-                                {education.school}
+                                {education.institution}
                               </motion.p>
 
                               <div className="space-y-1 sm:space-y-0 sm:grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
@@ -173,20 +143,15 @@ export function EducationSection() {
                                   <Calendar className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
                                   <span className="truncate">{education.period}</span>
                                 </motion.div>
-                                <motion.div
-                                  className="flex items-center gap-1 min-w-0"
-                                  whileHover={!isTouchDevice ? { scale: 1.05 } : {}}
-                                >
-                                  <MapPin className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
-                                  <span className="truncate">{education.location}</span>
-                                </motion.div>
-                                <motion.div
-                                  className="flex items-center gap-1 min-w-0"
-                                  whileHover={!isTouchDevice ? { scale: 1.05 } : {}}
-                                >
-                                  <Award className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
-                                  <span className="truncate">GPA: {education.gpa}</span>
-                                </motion.div>
+                                {education.gpa && (
+                                  <motion.div
+                                    className="flex items-center gap-1 min-w-0"
+                                    whileHover={!isTouchDevice ? { scale: 1.05 } : {}}
+                                  >
+                                    <Award className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                                    <span className="truncate">GPA: {education.gpa}</span>
+                                  </motion.div>
+                                )}
                               </div>
                             </div>
 
@@ -201,28 +166,30 @@ export function EducationSection() {
                             </motion.p>
 
                             {/* Achievements */}
-                            <motion.div
-                              initial={{ opacity: 0 }}
-                              whileInView={{ opacity: 1 }}
-                              transition={{ delay: 0.5 }}
-                            >
-                              <h4 className="text-xs sm:text-sm mb-2 text-muted-foreground font-medium">Achievements:</h4>
-                              <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                                {education.achievements.map((achievement, achievementIndex) => (
-                                  <motion.div
-                                    key={achievementIndex}
-                                    initial={{ opacity: 0, scale: 0 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    transition={{ delay: 0.6 + achievementIndex * 0.1 }}
-                                    whileHover={!isTouchDevice ? { scale: 1.05 } : {}}
-                                  >
-                                    <Badge variant="secondary" className="text-xs px-2 py-1 break-words">
-                                      {achievement}
-                                    </Badge>
-                                  </motion.div>
-                                ))}
-                              </div>
-                            </motion.div>
+                            {education.achievements && (
+                              <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ delay: 0.5 }}
+                              >
+                                <h4 className="text-xs sm:text-sm mb-2 text-muted-foreground font-medium">Achievements:</h4>
+                                <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                                  {education.achievements.map((achievement, achievementIndex) => (
+                                    <motion.div
+                                      key={achievementIndex}
+                                      initial={{ opacity: 0, scale: 0 }}
+                                      whileInView={{ opacity: 1, scale: 1 }}
+                                      transition={{ delay: 0.6 + achievementIndex * 0.1 }}
+                                      whileHover={!isTouchDevice ? { scale: 1.05 } : {}}
+                                    >
+                                      <Badge variant="secondary" className="text-xs px-2 py-1 break-words">
+                                        {achievement}
+                                      </Badge>
+                                    </motion.div>
+                                  ))}
+                                </div>
+                              </motion.div>
+                            )}
                           </CardContent>
                         </Card>
                       </motion.div>

@@ -1,71 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Briefcase, Calendar, Building, Code, Rocket, Users } from 'lucide-react';
+import { Briefcase, Calendar } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export function ExperienceSection() {
-  const { t } = useLanguage();
-
-  const experienceData = [
-    {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      period: "2022 - Present",
-      type: "Full-time",
-      description: "Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and architecting system solutions.",
-      technologies: ["React", "TypeScript", "Node.js", "AWS", "PostgreSQL", "Docker"],
-      achievements: [
-        "Increased application performance by 40%",
-        "Led team of 5 developers",
-        "Implemented CI/CD pipeline reducing deployment time by 60%"
-      ],
-      icon: Code
-    },
-    {
-      title: "Frontend Developer",
-      company: "StartupX",
-      period: "2021 - 2022",
-      type: "Full-time",
-      description: "Developed responsive web applications and mobile-first designs. Collaborated with UX/UI designers to create seamless user experiences.",
-      technologies: ["React", "JavaScript", "Tailwind CSS", "Figma", "Git", "Jest"],
-      achievements: [
-        "Built 3 major product features from scratch",
-        "Improved user engagement by 25%",
-        "Reduced bundle size by 30%"
-      ],
-      icon: Rocket
-    },
-    {
-      title: "Web Developer Intern",
-      company: "Digital Agency Pro",
-      period: "2020 - 2021",
-      type: "Internship",
-      description: "Assisted in developing client websites and learning modern web development practices. Gained experience in project management and client communication.",
-      technologies: ["HTML", "CSS", "JavaScript", "WordPress", "PHP", "MySQL"],
-      achievements: [
-        "Completed 10+ client projects",
-        "Learned agile development methodology",
-        "Received outstanding intern award"
-      ],
-      icon: Users
-    },
-    {
-      title: "Freelance Developer",
-      company: "Self-employed",
-      period: "2019 - 2020",
-      type: "Freelance",
-      description: "Worked on various web development projects for small businesses and startups. Specialized in custom WordPress themes and e-commerce solutions.",
-      technologies: ["WordPress", "WooCommerce", "PHP", "jQuery", "Bootstrap"],
-      achievements: [
-        "Delivered 15+ successful projects",
-        "Maintained 98% client satisfaction rate",
-        "Built long-term client relationships"
-      ],
-      icon: Briefcase
-    }
-  ];
+  const { t, data } = useLanguage();
 
   const containerVariants = {
     hidden: {},
@@ -110,10 +51,10 @@ export function ExperienceSection() {
               </motion.div>
               
               <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4 text-center">
-                {t('experience_title')}
+                {data.work.title}
               </h2>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
-                {t('experience_description')}
+                {data.work.subtitle}
               </p>
             </motion.div>
 
@@ -124,8 +65,7 @@ export function ExperienceSection() {
               viewport={{ once: true }}
               className="space-y-6 sm:space-y-8"
             >
-              {experienceData.map((experience, index) => {
-                const IconComponent = experience.icon;
+              {data.work.experience.map((experience, index) => {
                 return (
                   <motion.div
                     key={index}
@@ -146,7 +86,7 @@ export function ExperienceSection() {
                                 whileHover={{ scale: 1.1, rotate: 10 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                               >
-                                <IconComponent className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+                                <Briefcase className="w-6 h-6 text-purple-600 dark:text-purple-400" />
                               </motion.div>
                               
                               <div className="flex lg:flex-col items-center lg:items-start gap-2 text-xs sm:text-sm text-muted-foreground">
@@ -156,13 +96,6 @@ export function ExperienceSection() {
                                 >
                                   <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
                                   <span className="text-xs sm:text-sm">{experience.period}</span>
-                                </motion.div>
-                                <motion.div
-                                  className="flex items-center gap-1"
-                                  whileHover={{ scale: 1.05 }}
-                                >
-                                  <Building className="w-3 h-3 sm:w-4 sm:h-4" />
-                                  <span className="text-xs sm:text-sm">{experience.type}</span>
                                 </motion.div>
                               </div>
                             </div>
@@ -198,56 +131,28 @@ export function ExperienceSection() {
                                 {experience.description}
                               </motion.p>
 
-                              {/* Technologies */}
+                              {/* Skills */}
                               <motion.div
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
                                 transition={{ delay: 0.5 }}
                               >
-                                <h4 className="text-xs sm:text-sm mb-2 text-muted-foreground">Technologies:</h4>
+                                <h4 className="text-xs sm:text-sm mb-2 text-muted-foreground">Skills:</h4>
                                 <div className="flex flex-wrap gap-2">
-                                  {experience.technologies.map((tech, techIndex) => (
+                                  {experience.skills.map((skill, skillIndex) => (
                                     <motion.div
-                                      key={techIndex}
+                                      key={skillIndex}
                                       initial={{ opacity: 0, scale: 0 }}
                                       whileInView={{ opacity: 1, scale: 1 }}
-                                      transition={{ delay: 0.6 + techIndex * 0.05 }}
+                                      transition={{ delay: 0.6 + skillIndex * 0.05 }}
                                       whileHover={{ scale: 1.05, y: -2 }}
                                     >
                                       <Badge variant="outline" className="text-xs">
-                                        {tech}
+                                        {skill}
                                       </Badge>
                                     </motion.div>
                                   ))}
                                 </div>
-                              </motion.div>
-
-                              {/* Achievements */}
-                              <motion.div
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                transition={{ delay: 0.7 }}
-                              >
-                                <h4 className="text-xs sm:text-sm mb-2 text-muted-foreground">Key Achievements:</h4>
-                                <ul className="space-y-1">
-                                  {experience.achievements.map((achievement, achievementIndex) => (
-                                    <motion.li
-                                      key={achievementIndex}
-                                      className="text-xs sm:text-sm text-muted-foreground flex items-start gap-2"
-                                      initial={{ opacity: 0, x: -10 }}
-                                      whileInView={{ opacity: 1, x: 0 }}
-                                      transition={{ delay: 0.8 + achievementIndex * 0.1 }}
-                                      whileHover={{ x: 5 }}
-                                    >
-                                      <motion.span
-                                        className="text-purple-500 dark:text-purple-400 mt-1.5 block w-1 h-1 rounded-full bg-purple-500 dark:bg-purple-400 flex-shrink-0"
-                                        animate={{ scale: [1, 1.5, 1] }}
-                                        transition={{ duration: 2, repeat: Infinity, delay: achievementIndex * 0.5 }}
-                                      />
-                                      {achievement}
-                                    </motion.li>
-                                  ))}
-                                </ul>
                               </motion.div>
                             </div>
                           </div>
@@ -256,7 +161,7 @@ export function ExperienceSection() {
                     </motion.div>
 
                     {/* Connecting Line */}
-                    {index < experienceData.length - 1 && (
+                    {index < data.work.experience.length - 1 && (
                       <motion.div
                         className="absolute left-6 top-full w-0.5 h-6 sm:h-8 bg-gradient-to-b from-purple-500/50 to-transparent"
                         initial={{ scaleY: 0 }}

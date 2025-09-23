@@ -3,14 +3,14 @@ import { motion } from 'motion/react';
 import { ChevronDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
-import profileImage from 'figma:asset/2287f649485cc1fcedbe66d2c5b397ab2888a8d2.png';
+import profileImage from '../assets/2287f649485cc1fcedbe66d2c5b397ab2888a8d2.png';
 
 interface HeroSectionProps {
   onSectionClick: (section: string) => void;
 }
 
 export function HeroSection({ onSectionClick }: HeroSectionProps) {
-  const { t } = useLanguage();
+  const { t, data } = useLanguage();
 
   const floatingAnimation = {
     y: [0, -10, 0],
@@ -102,7 +102,10 @@ export function HeroSection({ onSectionClick }: HeroSectionProps) {
               style={{ backgroundSize: "200% 100%" }}
             >
               <span className="block break-words hyphens-auto">
-                {t('hero_title')}
+                {data.home.name}
+              </span>
+              <span className="block break-words hyphens-auto text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                {data.home.title}
               </span>
             </motion.h1>
 
@@ -112,16 +115,7 @@ export function HeroSection({ onSectionClick }: HeroSectionProps) {
               transition={{ delay: 0.6 }}
               className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed break-words hyphens-auto"
             >
-              {t('hero_subtitle')}
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.9 }}
-              className="text-base sm:text-lg text-muted-foreground/80 max-w-2xl mx-auto leading-relaxed break-words hyphens-auto"
-            >
-              {t('hero_description')}
+              {data.home.description}
             </motion.p>
           </motion.div>
 
@@ -141,7 +135,7 @@ export function HeroSection({ onSectionClick }: HeroSectionProps) {
                 className="relative z-10 flex items-center gap-2 px-2"
                 whileHover={{ y: -2 }}
               >
-                <span className="break-words text-center">{t('projects')}</span>
+                <span className="break-words text-center">{data.home.viewWork}</span>
                 <motion.div
                   animate={{ x: [0, 4, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
@@ -163,7 +157,7 @@ export function HeroSection({ onSectionClick }: HeroSectionProps) {
               className="w-full sm:w-auto group min-h-[3rem]"
             >
               <Download className="w-4 h-4 mr-2 flex-shrink-0" />
-              <span className="break-words text-center">{t('download_cv')}</span>
+              <span className="break-words text-center">{data.home.getInTouch}</span>
               <motion.div
                 className="ml-2 flex-shrink-0"
                 animate={{ y: [0, -2, 0] }}

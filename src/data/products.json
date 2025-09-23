@@ -1,0 +1,168 @@
+{
+  "en": {
+    "title": "Products",
+    "subtitle": "Innovative solutions and applications I've developed across various domains",
+    "products": [
+      {
+        "id": "tms",
+        "name": "Terminal Management System",
+        "description": "Management system for payment terminal devices used for money transfer operations and financial transactions.",
+        "image": "/src/assets/products/tms.png",
+        "tech": ["React", "TypeScript", "Node.js", "PostgreSQL"],
+        "category": "Fintech Infrastructure",
+        "features": ["Device Management", "Transaction Monitoring", "Real-time Analytics", "Security Compliance"],
+        "status": "Production",
+        "year": "2023"
+      },
+      {
+        "id": "sig",
+        "name": "SIG",
+        "description": "Comprehensive business solution platform providing integrated services and digital transformation tools.",
+        "image": "/src/assets/products/SIG_Logo.svg",
+        "tech": ["React", "Next.js", "AWS", "PostgreSQL"],
+        "category": "Enterprise Platform",
+        "features": ["Business Process Management", "Digital Transformation", "Integration Services", "Analytics Dashboard"],
+        "status": "Production",
+        "year": "2022"
+      },
+      {
+        "id": "hija",
+        "name": "Hija Tracking",
+        "description": "IoT device tracking platform for monitoring Jamaah pilgrims in Saudi Arabia with real-time location services.",
+        "image": "/src/assets/products/hija.svg",
+        "tech": ["React", "IoT", "GPS", "Real-time API"],
+        "category": "IoT Tracking",
+        "features": ["Real-time GPS Tracking", "Geofencing", "Emergency Alerts", "Group Management"],
+        "status": "Production",
+        "year": "2023"
+      },
+      {
+        "id": "aksesbayar",
+        "name": "AksesBayar",
+        "description": "Fintech merchant aggregator platform with open API for payment gateway integration and financial services.",
+        "image": "/src/assets/products/ngalir.svg",
+        "tech": ["React", "API Gateway", "Payment APIs", "PostgreSQL"],
+        "category": "Payment Gateway",
+        "features": ["Multi-payment Gateway", "Merchant Dashboard", "Transaction Analytics", "API Integration"],
+        "status": "Production",
+        "year": "2021"
+      },
+      {
+        "id": "ngisi",
+        "name": "Ngisi PPOB",
+        "description": "Payment Point Online Bank (PPOB) platform for handling various bill payments and digital transactions.",
+        "image": "/src/assets/products/ngisi.svg",
+        "tech": ["Vue.js", "Payment API", "MySQL", "Redis"],
+        "category": "Payment Services",
+        "features": ["Bill Payment", "Topup Services", "Transaction History", "Multi-channel Payment"],
+        "status": "Production",
+        "year": "2022"
+      },
+      {
+        "id": "rpayku",
+        "name": "RPay-KU",
+        "description": "Merchant aggregator fintech platform similar to Akses Bayar, providing comprehensive payment solutions.",
+        "image": "/src/assets/products/rpayku.svg",
+        "tech": ["React", "Express.js", "Payment APIs", "MongoDB"],
+        "category": "Merchant Aggregator",
+        "features": ["Merchant Onboarding", "Payment Processing", "Settlement Management", "Reporting"],
+        "status": "Production",
+        "year": "2021"
+      },
+      {
+        "id": "vinilon",
+        "name": "Vinilon IoT",
+        "description": "IoT-enabled platform for smart device management and monitoring with real-time data analytics.",
+        "image": "/src/assets/products/vinilon.svg",
+        "tech": ["Next.js", "IoT", "WebSocket", "InfluxDB"],
+        "category": "IoT Platform",
+        "features": ["Device Management", "Real-time Monitoring", "Data Analytics", "Alert System"],
+        "status": "Production",
+        "year": "2023"
+      }
+    ]
+  },
+  "id": {
+    "title": "Produk",
+    "subtitle": "Solusi inovatif dan aplikasi yang telah saya kembangkan di berbagai domain",
+    "products": [
+      {
+        "id": "tms",
+        "name": "Terminal Management System",
+        "description": "Sistem manajemen untuk perangkat terminal pembayaran yang digunakan untuk operasi transfer uang dan transaksi keuangan.",
+        "image": "/src/assets/products/tms.png",
+        "tech": ["React", "TypeScript", "Node.js", "PostgreSQL"],
+        "category": "Infrastruktur Fintech",
+        "features": ["Manajemen Perangkat", "Monitoring Transaksi", "Analitik Real-time", "Kepatuhan Keamanan"],
+        "status": "Produksi",
+        "year": "2023"
+      },
+      {
+        "id": "sig",
+        "name": "SIG",
+        "description": "Platform solusi bisnis komprehensif yang menyediakan layanan terintegrasi dan alat transformasi digital.",
+        "image": "/src/assets/products/SIG_Logo.svg",
+        "tech": ["React", "Next.js", "AWS", "PostgreSQL"],
+        "category": "Platform Enterprise",
+        "features": ["Manajemen Proses Bisnis", "Transformasi Digital", "Layanan Integrasi", "Dashboard Analitik"],
+        "status": "Produksi",
+        "year": "2022"
+      },
+      {
+        "id": "hija",
+        "name": "Hija Tracking",
+        "description": "Platform pelacakan perangkat IoT untuk memantau jamaah haji di Arab Saudi dengan layanan lokasi real-time.",
+        "image": "/src/assets/products/hija.svg",
+        "tech": ["React", "IoT", "GPS", "Real-time API"],
+        "category": "Pelacakan IoT",
+        "features": ["Pelacakan GPS Real-time", "Geofencing", "Peringatan Darurat", "Manajemen Grup"],
+        "status": "Produksi",
+        "year": "2023"
+      },
+      {
+        "id": "aksesbayar",
+        "name": "Akses Bayar",
+        "description": "Platform agregator merchant fintech dengan API terbuka untuk integrasi payment gateway dan layanan keuangan.",
+        "image": "/src/assets/products/ngalir.svg",
+        "tech": ["React", "API Gateway", "Payment APIs", "PostgreSQL"],
+        "category": "Payment Gateway",
+        "features": ["Multi-payment Gateway", "Dashboard Merchant", "Analitik Transaksi", "Integrasi API"],
+        "status": "Produksi",
+        "year": "2021"
+      },
+      {
+        "id": "ngisi",
+        "name": "Ngisi PPOB",
+        "description": "Platform Payment Point Online Bank (PPOB) untuk menangani berbagai pembayaran tagihan dan transaksi digital.",
+        "image": "/src/assets/products/ngisi.svg",
+        "tech": ["Vue.js", "Payment API", "MySQL", "Redis"],
+        "category": "Layanan Pembayaran",
+        "features": ["Pembayaran Tagihan", "Layanan Topup", "Riwayat Transaksi", "Pembayaran Multi-channel"],
+        "status": "Produksi",
+        "year": "2022"
+      },
+      {
+        "id": "rpayku",
+        "name": "RPay-KU",
+        "description": "Platform fintech agregator merchant yang menyediakan solusi pembayaran komprehensif.",
+        "image": "/src/assets/products/rpayku.svg",
+        "tech": ["React", "Express.js", "Payment APIs", "MongoDB"],
+        "category": "Agregator Merchant",
+        "features": ["Onboarding Merchant", "Pemrosesan Pembayaran", "Manajemen Settlement", "Pelaporan"],
+        "status": "Produksi",
+        "year": "2021"
+      },
+      {
+        "id": "vinilon",
+        "name": "Vinilon IoT",
+        "description": "Platform IoT untuk manajemen dan monitoring perangkat pintar dengan analitik data real-time.",
+        "image": "/src/assets/products/vinilon.svg",
+        "tech": ["Next.js", "IoT", "WebSocket", "InfluxDB"],
+        "category": "Platform IoT",
+        "features": ["Manajemen Perangkat", "Monitoring Real-time", "Analitik Data", "Sistem Peringatan"],
+        "status": "Produksi",
+        "year": "2023"
+      }
+    ]
+  }
+}

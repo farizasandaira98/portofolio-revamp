@@ -1,4 +1,12 @@
 import React, { createContext, useContext, useState } from 'react';
+import homeData from '../data/home.json';
+import contactData from '../data/contact.json';
+import educationData from '../data/education.json';
+import workData from '../data/work.json';
+import projectsData from '../data/projects.json';
+import companiesData from '../data/companies.json';
+import productsData from '../data/products.json';
+import seoData from '../data/seo.json';
 
 type Language = 'en' | 'id';
 
@@ -6,6 +14,16 @@ interface LanguageContextType {
   language: Language;
   toggleLanguage: () => void;
   t: (key: string) => string;
+  data: {
+    home: typeof homeData.en;
+    contact: typeof contactData.en;
+    education: typeof educationData.en;
+    work: typeof workData.en;
+    projects: typeof projectsData.en;
+    companies: typeof companiesData.en;
+    products: typeof productsData.en;
+    seo: typeof seoData;
+  };
 }
 
 const translations = {
@@ -80,8 +98,19 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     return translations[language][key as keyof typeof translations.en] || key;
   };
 
+  const data = {
+    home: language === 'en' ? homeData.en : homeData.id,
+    contact: language === 'en' ? contactData.en : contactData.id,
+    education: language === 'en' ? educationData.en : educationData.id,
+    work: language === 'en' ? workData.en : workData.id,
+    projects: language === 'en' ? projectsData.en : projectsData.id,
+    companies: language === 'en' ? companiesData.en : companiesData.id,
+    products: language === 'en' ? productsData.en : productsData.id,
+    seo: seoData,
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage, t }}>
+    <LanguageContext.Provider value={{ language, toggleLanguage, t, data }}>
       {children}
     </LanguageContext.Provider>
   );

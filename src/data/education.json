@@ -1,46 +1,54 @@
 {
-  "en": {
-    "title": "Education",
-    "subtitle": "Academic background and certifications",
-    "items": [
-      {
-        "title": "Bachelor of Computer Science",
-        "institution": "Universitas Teknologi Yogyakarta",
-        "period": "2017 - 2020",
-        "description": "Graduated with a focus on software engineering and web development. Developed strong foundation in algorithms, data structures, and modern programming paradigms.",
-        "animationSrc": "https://assets8.lottiefiles.com/packages/lf20_jcikwtux.json",
-        "gpa": "3.75"
-      },
-      {
-        "title": "Vocational High School in IT Support",
-        "institution": "SMK Negeri 3 Palu",
-        "period": "2014 - 2016",
-        "description": "Specialized in IT support and network administration. Gained practical skills in hardware troubleshooting, network configuration, and system maintenance.",
-        "animationSrc": "https://assets5.lottiefiles.com/packages/lf20_qmfs6c3i.json",
-        "achievements": ["1st Place in Student Skills Competition At Province Level", "Participant of National Student Skills Competition", "Participant of debate competition at province level"]
-      }
-    ]
-  },
-  "id": {
-    "title": "Pendidikan",
-    "subtitle": "Latar belakang akademis dan sertifikasi",
-    "items": [
-      {
-        "title": "Sarjana Ilmu Komputer",
-        "institution": "Universitas Teknologi Yogyakarta",
-        "period": "2017 - 2020",
-        "description": "Lulus dengan fokus pada rekayasa perangkat lunak dan pengembangan web. Mengembangkan fondasi yang kuat dalam algoritma, struktur data, dan paradigma pemrograman modern.",
-        "animationSrc": "https://assets8.lottiefiles.com/packages/lf20_jcikwtux.json",
-        "gpa": "3.75"
-      },
-      {
-        "title": "SMK Jurusan IT Support",
-        "institution": "SMK Negeri 3 Palu",
-        "period": "2014 - 2016",
-        "description": "Spesialisasi dalam dukungan TI dan administrasi jaringan. Mendapatkan keterampilan praktis dalam pemecahan masalah perangkat keras, konfigurasi jaringan, dan pemeliharaan sistem.",
-        "animationSrc": "https://assets5.lottiefiles.com/packages/lf20_qmfs6c3i.json",
-        "achievements": ["Juara 1 Lomba Kompetensi Siswa Tingkat Provinsi", "Peserta Lomba Kompetensi Siswa Nasional", "Peserta lomba debat tingkat provinsi"]
-      }
-    ]
-  }
+	"en": {
+		"title": "Education",
+		"subtitle": "Academic background and certifications",
+		"items": [
+			{
+				"title": "Bachelor of Computer Science",
+				"institution": "Universitas Teknologi Yogyakarta",
+				"period": "2017 - 2020",
+				"description": "Graduated with a focus on software engineering and web development. Developed strong foundation in algorithms, data structures, and modern programming paradigms.",
+				"animationSrc": "https://assets8.lottiefiles.com/packages/lf20_jcikwtux.json",
+				"gpa": "3.75"
+			},
+			{
+				"title": "Vocational High School in IT Support",
+				"institution": "SMK Negeri 3 Palu",
+				"period": "2014 - 2016",
+				"description": "Specialized in IT support and network administration. Gained practical skills in hardware troubleshooting, network configuration, and system maintenance.",
+				"animationSrc": "https://assets5.lottiefiles.com/packages/lf20_qmfs6c3i.json",
+				"achievements": [
+					"1st Place in Student Skills Competition At Province Level",
+					"Participant of National Student Skills Competition",
+					"Participant of debate competition at province level"
+				]
+			}
+		]
+	},
+	"id": {
+		"title": "Pendidikan",
+		"subtitle": "Latar belakang akademis dan sertifikasi",
+		"items": [
+			{
+				"title": "Sarjana Ilmu Komputer",
+				"institution": "Universitas Teknologi Yogyakarta",
+				"period": "2017 - 2020",
+				"description": "Lulus dengan fokus pada rekayasa perangkat lunak dan pengembangan web. Mengembangkan fondasi yang kuat dalam algoritma, struktur data, dan paradigma pemrograman modern.",
+				"animationSrc": "https://assets8.lottiefiles.com/packages/lf20_jcikwtux.json",
+				"gpa": "3.75"
+			},
+			{
+				"title": "SMK Jurusan IT Support",
+				"institution": "SMK Negeri 3 Palu",
+				"period": "2014 - 2016",
+				"description": "Spesialisasi dalam dukungan TI dan administrasi jaringan. Mendapatkan keterampilan praktis dalam pemecahan masalah perangkat keras, konfigurasi jaringan, dan pemeliharaan sistem.",
+				"animationSrc": "https://assets5.lottiefiles.com/packages/lf20_qmfs6c3i.json",
+				"achievements": [
+					"Juara 1 Lomba Kompetensi Siswa Tingkat Provinsi",
+					"Peserta Lomba Kompetensi Siswa Nasional",
+					"Peserta lomba debat tingkat provinsi"
+				]
+			}
+		]
+	}
 }

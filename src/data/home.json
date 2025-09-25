@@ -1,18 +1,18 @@
 {
-  "en": {
-    "name": "Muh Fariza",
-    "title": "Fullstack Developer",
-    "description": "Passionate fullstack developer with expertise in React, Svelte, Node.js, and cloud technologies. Creating innovative solutions and digital experiences.",
-    "viewWork": "View My Work",
-    "getInTouch": "Get In Touch",
-    "animationSrc": "https://assets2.lottiefiles.com/packages/lf20_V9t630.json"
-  },
-  "id": {
-    "name": "Muh Fariza",
-    "title": "Fullstack Developer",
-    "description": "Pengembang fullstack yang berpengalaman dalam React, Svelte, Node.js, dan teknologi cloud. Menciptakan solusi inovatif dan pengalaman digital.",
-    "viewWork": "Lihat Karya Saya",
-    "getInTouch": "Hubungi Saya",
-    "animationSrc": "https://assets2.lottiefiles.com/packages/lf20_V9t630.json"
-  }
+	"en": {
+		"name": "Muh Fariza",
+		"title": "Fullstack Developer",
+		"description": "Passionate fullstack developer with expertise in React, Svelte, Node.js, and cloud technologies. Creating innovative solutions and digital experiences.",
+		"viewWork": "View My Work",
+		"getInTouch": "Get In Touch",
+		"animationSrc": "https://assets2.lottiefiles.com/packages/lf20_V9t630.json"
+	},
+	"id": {
+		"name": "Muh Fariza",
+		"title": "Fullstack Developer",
+		"description": "Pengembang fullstack yang berpengalaman dalam React, Svelte, Node.js, dan teknologi cloud. Menciptakan solusi inovatif dan pengalaman digital.",
+		"viewWork": "Lihat Karya Saya",
+		"getInTouch": "Hubungi Saya",
+		"animationSrc": "https://assets2.lottiefiles.com/packages/lf20_V9t630.json"
+	}
 }

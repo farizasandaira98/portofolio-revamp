@@ -1,78 +1,146 @@
 {
-  "en": {
-    "title": "Experience",
-    "subtitle": "My professional journey",
-    "experience": [
-      {
-        "title": "Backend Developer",
-        "company": "Aksesbayar",
-        "period": "2025 - Present",
-        "description": "Worked as a Backend Developer for Aksesbayar, a fintech company specializing in payment gateway and merchant aggregator services. Developed and maintained backend systems using Express.js and Golang, ensuring robust API integrations and seamless payment processing. Collaborated with cross-functional teams to deliver scalable solutions. Based in Jakarta Barat.",
-        "animationSrc": "https://assets9.lottiefiles.com/packages/lf20_1pxqjqps.json",
-        "skills": ["Express.js", "Golang", "API Integration", "Payment Gateway", "Fintech", "Docker", "TimeScaleDB", "MySQL", "Node.js", "CICD"]
-      },
-      {
-        "title": "Software Engineer",
-        "company": "TSM Technology",
-        "period": "2022 - 2025",
-        "description": "Developing full-stack web applications using React.js, TypeScript, Next.js, and Svelte for frontend development. Backend expertise includes Express.js and Golang. Proficient in AWS services including DynamoDB, Cognito, IAM, and Amplify for scalable cloud solutions. Based in Jakarta Barat.",
-        "animationSrc": "https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json",
-        "skills": ["React.js", "TypeScript", "Next.js", "Express.js", "Golang", "AWS", "DynamoDB", "Cognito"]
-      },
-      {
-        "title": "Freelance Fullstack Developer",
-        "company": "Multiple Clients",
-        "period": "2019 - Present",
-        "description": "Developed web applications for various clients including Akses Bayar, Semen Gresik Indonesia, and Loadgic. Specialized in PHP applications, Laravel and CodeIgniter frameworks, React with TypeScript, Next.js, and modern web development practices.",
-        "animationSrc": "https://assets4.lottiefiles.com/packages/lf20_fcfjwiyb.json",
-        "skills": ["PHP", "Laravel", "CodeIgniter", "React", "TypeScript", "Next.js", "Svelte", "Golang"]
-      },
-      {
-        "title": "IT Consultant",
-        "company": "Dinas PUP ESDM Provinsi DIY",
-        "period": "2021 - 2022",
-        "description": "Documented 31 provincial irrigation systems, mapped primary, secondary, and tertiary channel networks. Set up and maintained network infrastructure within the department environment. Contributed to government digitalization initiatives.",
-        "animationSrc": "https://assets3.lottiefiles.com/packages/lf20_qmfs6c3i.json",
-        "skills": ["Network Infrastructure", "System Documentation", "GIS Mapping", "Government IT"]
-      }
-    ]
-  },
-  "id": {
-    "title": "Pengalaman",
-    "subtitle": "Perjalanan profesional saya",
-    "experience": [
-      {
-        "title": "Backend Developer",
-        "company": "Aksesbayar",
-        "period": "2025 - Present",
-        "description": "Bekerja sebagai Backend Developer di Aksesbayar, perusahaan fintech yang berfokus pada layanan payment gateway dan agregator merchant. Mengembangkan dan memelihara sistem backend menggunakan Express.js dan Golang, memastikan integrasi API yang andal dan pemrosesan pembayaran yang lancar. Berkolaborasi dengan tim lintas fungsi untuk menghadirkan solusi yang skalabel. Berbasis di Jakarta Barat.",
-        "animationSrc": "https://assets9.lottiefiles.com/packages/lf20_1pxqjqps.json",
-        "skills": ["Express.js", "Golang", "Integrasi API", "Payment Gateway", "Fintech", "Docker", "TimeScaleDB", "MySQL", "Node.js", "CICD"]
-      },
-      {
-        "title": "Software Engineer",
-        "company": "TSM Technology",
-        "period": "2022 - 2025",
-        "description": "Mengembangkan aplikasi web full-stack menggunakan React.js, TypeScript, Next.js, dan Svelte untuk pengembangan frontend. Keahlian backend meliputi Express.js dan Golang. Berpengalaman dalam layanan AWS seperti DynamoDB, Cognito, IAM, dan Amplify untuk solusi cloud yang skalabel. Berbasis di Jakarta Barat.",
-        "animationSrc": "https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json",
-        "skills": ["React.js", "TypeScript", "Next.js", "Express.js", "Golang", "AWS", "DynamoDB", "Cognito"]
-      },
-      {
-        "title": "Freelance Fullstack Developer",
-        "company": "Berbagai Klien",
-        "period": "2019 - Sekarang",
-        "description": "Mengembangkan aplikasi web untuk berbagai klien termasuk Akses Bayar, Semen Gresik Indonesia, dan Loadgic. Spesialisasi dalam aplikasi PHP, framework Laravel dan CodeIgniter, React dengan TypeScript, Next.js, Svelte, Golang, serta praktik pengembangan web modern.",
-        "animationSrc": "https://assets4.lottiefiles.com/packages/lf20_fcfjwiyb.json",
-        "skills": ["PHP", "Laravel", "CodeIgniter", "React", "TypeScript", "Next.js", "Svelte", "Golang"]
-      },
-      {
-        "title": "IT Consultant",
-        "company": "Dinas PUP ESDM Provinsi DIY",
-        "period": "2021 - 2022",
-        "description": "Mendokumentasikan 31 sistem irigasi provinsi, memetakan jaringan saluran primer, sekunder, dan tersier. Menyiapkan dan memelihara infrastruktur jaringan di lingkungan dinas. Berkontribusi pada inisiatif digitalisasi pemerintah.",
-        "animationSrc": "https://assets3.lottiefiles.com/packages/lf20_qmfs6c3i.json",
-        "skills": ["Infrastruktur Jaringan", "Dokumentasi Sistem", "Pemetaan GIS", "IT Pemerintahan"]
-      }
-    ]
-  }
+	"en": {
+		"title": "Experience",
+		"subtitle": "My professional journey",
+		"experience": [
+			{
+				"title": "Backend Developer",
+				"company": "Aksesbayar",
+				"period": "2025 - Present",
+				"description": "Worked as a Backend Developer for Aksesbayar, a fintech company specializing in payment gateway and merchant aggregator services. Developed and maintained backend systems using Express.js and Golang, ensuring robust API integrations and seamless payment processing. Collaborated with cross-functional teams to deliver scalable solutions. Based in Jakarta Barat.",
+				"animationSrc": "https://assets9.lottiefiles.com/packages/lf20_1pxqjqps.json",
+				"skills": [
+					"Express.js",
+					"Golang",
+					"API Integration",
+					"Payment Gateway",
+					"Fintech",
+					"Docker",
+					"TimeScaleDB",
+					"MySQL",
+					"Node.js",
+					"CICD"
+				]
+			},
+			{
+				"title": "Software Engineer",
+				"company": "TSM Technology",
+				"period": "2022 - 2025",
+				"description": "Developing full-stack web applications using React.js, TypeScript, Next.js, and Svelte for frontend development. Backend expertise includes Express.js and Golang. Proficient in AWS services including DynamoDB, Cognito, IAM, and Amplify for scalable cloud solutions. Based in Jakarta Barat.",
+				"animationSrc": "https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json",
+				"skills": [
+					"React.js",
+					"TypeScript",
+					"Next.js",
+					"Express.js",
+					"Golang",
+					"AWS",
+					"DynamoDB",
+					"Cognito"
+				]
+			},
+			{
+				"title": "Freelance Fullstack Developer",
+				"company": "Multiple Clients",
+				"period": "2019 - Present",
+				"description": "Developed web applications for various clients including Akses Bayar, Semen Gresik Indonesia, and Loadgic. Specialized in PHP applications, Laravel and CodeIgniter frameworks, React with TypeScript, Next.js, and modern web development practices.",
+				"animationSrc": "https://assets4.lottiefiles.com/packages/lf20_fcfjwiyb.json",
+				"skills": [
+					"PHP",
+					"Laravel",
+					"CodeIgniter",
+					"React",
+					"TypeScript",
+					"Next.js",
+					"Svelte",
+					"Golang"
+				]
+			},
+			{
+				"title": "IT Consultant",
+				"company": "Dinas PUP ESDM Provinsi DIY",
+				"period": "2021 - 2022",
+				"description": "Documented 31 provincial irrigation systems, mapped primary, secondary, and tertiary channel networks. Set up and maintained network infrastructure within the department environment. Contributed to government digitalization initiatives.",
+				"animationSrc": "https://assets3.lottiefiles.com/packages/lf20_qmfs6c3i.json",
+				"skills": [
+					"Network Infrastructure",
+					"System Documentation",
+					"GIS Mapping",
+					"Government IT"
+				]
+			}
+		]
+	},
+	"id": {
+		"title": "Pengalaman",
+		"subtitle": "Perjalanan profesional saya",
+		"experience": [
+			{
+				"title": "Backend Developer",
+				"company": "Aksesbayar",
+				"period": "2025 - Present",
+				"description": "Bekerja sebagai Backend Developer di Aksesbayar, perusahaan fintech yang berfokus pada layanan payment gateway dan agregator merchant. Mengembangkan dan memelihara sistem backend menggunakan Express.js dan Golang, memastikan integrasi API yang andal dan pemrosesan pembayaran yang lancar. Berkolaborasi dengan tim lintas fungsi untuk menghadirkan solusi yang skalabel. Berbasis di Jakarta Barat.",
+				"animationSrc": "https://assets9.lottiefiles.com/packages/lf20_1pxqjqps.json",
+				"skills": [
+					"Express.js",
+					"Golang",
+					"Integrasi API",
+					"Payment Gateway",
+					"Fintech",
+					"Docker",
+					"TimeScaleDB",
+					"MySQL",
+					"Node.js",
+					"CICD"
+				]
+			},
+			{
+				"title": "Software Engineer",
+				"company": "TSM Technology",
+				"period": "2022 - 2025",
+				"description": "Mengembangkan aplikasi web full-stack menggunakan React.js, TypeScript, Next.js, dan Svelte untuk pengembangan frontend. Keahlian backend meliputi Express.js dan Golang. Berpengalaman dalam layanan AWS seperti DynamoDB, Cognito, IAM, dan Amplify untuk solusi cloud yang skalabel. Berbasis di Jakarta Barat.",
+				"animationSrc": "https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json",
+				"skills": [
+					"React.js",
+					"TypeScript",
+					"Next.js",
+					"Express.js",
+					"Golang",
+					"AWS",
+					"DynamoDB",
+					"Cognito"
+				]
+			},
+			{
+				"title": "Freelance Fullstack Developer",
+				"company": "Berbagai Klien",
+				"period": "2019 - Sekarang",
+				"description": "Mengembangkan aplikasi web untuk berbagai klien termasuk Akses Bayar, Semen Gresik Indonesia, dan Loadgic. Spesialisasi dalam aplikasi PHP, framework Laravel dan CodeIgniter, React dengan TypeScript, Next.js, Svelte, Golang, serta praktik pengembangan web modern.",
+				"animationSrc": "https://assets4.lottiefiles.com/packages/lf20_fcfjwiyb.json",
+				"skills": [
+					"PHP",
+					"Laravel",
+					"CodeIgniter",
+					"React",
+					"TypeScript",
+					"Next.js",
+					"Svelte",
+					"Golang"
+				]
+			},
+			{
+				"title": "IT Consultant",
+				"company": "Dinas PUP ESDM Provinsi DIY",
+				"period": "2021 - 2022",
+				"description": "Mendokumentasikan 31 sistem irigasi provinsi, memetakan jaringan saluran primer, sekunder, dan tersier. Menyiapkan dan memelihara infrastruktur jaringan di lingkungan dinas. Berkontribusi pada inisiatif digitalisasi pemerintah.",
+				"animationSrc": "https://assets3.lottiefiles.com/packages/lf20_qmfs6c3i.json",
+				"skills": [
+					"Infrastruktur Jaringan",
+					"Dokumentasi Sistem",
+					"Pemetaan GIS",
+					"IT Pemerintahan"
+				]
+			}
+		]
+	}
 }

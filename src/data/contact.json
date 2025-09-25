@@ -1,102 +1,102 @@
 {
-  "en": {
-    "title": "Get In Touch",
-    "subtitle": "Let's create something amazing together",
-    "info": {
-      "email": "muhfariza98@gmail.com",
-      "phone": "+62 853 979 86721",
-      "location": "Jakarta, Indonesia",
-      "availability": "Available for freelance projects"
-    },
-    "social": [
-      {
-        "name": "GitHub",
-        "url": "https://github.com/farizasandaira98",
-        "icon": "github"
-      },
-      {
-        "name": "LinkedIn",
-        "url": "https://linkedin.com/in/farizasandaira",
-        "icon": "linkedin"
-      },
-      {
-        "name": "Twitter",
-        "url": "https://twitter.com/farizasandaira",
-        "icon": "twitter"
-      },
-      {
-        "name": "Instagram",
-        "url": "https://instagram.com/farizasandaira",
-        "icon": "instagram"
-      }
-    ],
-    "form": {
-      "labels": {
-        "name": "Your Name",
-        "email": "Your Email",
-        "subject": "Subject",
-        "message": "Your Message"
-      },
-      "placeholders": {
-        "name": "Enter your name",
-        "email": "Enter your email",
-        "subject": "What's this about?",
-        "message": "Tell me about your project..."
-      },
-      "submitButton": "Send Message",
-      "successMessage": "Thank you {name}! Your message has been sent successfully. I'll get back to you soon.",
-      "errorMessage": "Sorry, there was an error sending your message. Please try again or contact me directly."
-    },
-    "animationSrc": "https://assets2.lottiefiles.com/packages/lf20_V9t630.json"
-  },
-  "id": {
-    "title": "Hubungi Saya",
-    "subtitle": "Mari menciptakan sesuatu yang luar biasa bersama",
-    "info": {
-      "email": "muhfariza98@gmail.com",
-      "phone": "+62 853 979 86721",
-      "location": "Jakarta, Indonesia",
-      "availability": "Tersedia untuk proyek freelance"
-    },
-    "social": [
-      {
-        "name": "GitHub",
-        "url": "https://github.com/farizasandaira98",
-        "icon": "github"
-      },
-      {
-        "name": "LinkedIn",
-        "url": "https://linkedin.com/in/farizasandaira",
-        "icon": "linkedin"
-      },
-      {
-        "name": "Twitter",
-        "url": "https://twitter.com/farizasandaira",
-        "icon": "twitter"
-      },
-      {
-        "name": "Instagram",
-        "url": "https://instagram.com/farizasandaira",
-        "icon": "instagram"
-      }
-    ],
-    "form": {
-      "labels": {
-        "name": "Nama Anda",
-        "email": "Email Anda",
-        "subject": "Subjek",
-        "message": "Pesan Anda"
-      },
-      "placeholders": {
-        "name": "Masukkan nama Anda",
-        "email": "Masukkan email Anda",
-        "subject": "Tentang apa ini?",
-        "message": "Ceritakan tentang proyek Anda..."
-      },
-      "submitButton": "Kirim Pesan",
-      "successMessage": "Terima kasih {name}! Pesan Anda telah berhasil dikirim. Saya akan segera menghubungi Anda.",
-      "errorMessage": "Maaf, terjadi kesalahan saat mengirim pesan Anda. Silakan coba lagi atau hubungi saya langsung."
-    },
-    "animationSrc": "https://assets2.lottiefiles.com/packages/lf20_V9t630.json"
-  }
+	"en": {
+		"title": "Get In Touch",
+		"subtitle": "Let's create something amazing together",
+		"info": {
+			"email": "muhfariza98@gmail.com",
+			"phone": "+62 853 979 86721",
+			"location": "Jakarta, Indonesia",
+			"availability": "Available for freelance projects"
+		},
+		"social": [
+			{
+				"name": "GitHub",
+				"url": "https://github.com/farizasandaira98",
+				"icon": "github"
+			},
+			{
+				"name": "LinkedIn",
+				"url": "https://linkedin.com/in/farizasandaira",
+				"icon": "linkedin"
+			},
+			{
+				"name": "Twitter",
+				"url": "https://twitter.com/farizasandaira",
+				"icon": "twitter"
+			},
+			{
+				"name": "Instagram",
+				"url": "https://instagram.com/farizasandaira",
+				"icon": "instagram"
+			}
+		],
+		"form": {
+			"labels": {
+				"name": "Your Name",
+				"email": "Your Email",
+				"subject": "Subject",
+				"message": "Your Message"
+			},
+			"placeholders": {
+				"name": "Enter your name",
+				"email": "Enter your email",
+				"subject": "What's this about?",
+				"message": "Tell me about your project..."
+			},
+			"submitButton": "Send Message",
+			"successMessage": "Thank you {name}! Your message has been sent successfully. I'll get back to you soon.",
+			"errorMessage": "Sorry, there was an error sending your message. Please try again or contact me directly."
+		},
+		"animationSrc": "https://assets2.lottiefiles.com/packages/lf20_V9t630.json"
+	},
+	"id": {
+		"title": "Hubungi Saya",
+		"subtitle": "Mari menciptakan sesuatu yang luar biasa bersama",
+		"info": {
+			"email": "muhfariza98@gmail.com",
+			"phone": "+62 853 979 86721",
+			"location": "Jakarta, Indonesia",
+			"availability": "Tersedia untuk proyek freelance"
+		},
+		"social": [
+			{
+				"name": "GitHub",
+				"url": "https://github.com/farizasandaira98",
+				"icon": "github"
+			},
+			{
+				"name": "LinkedIn",
+				"url": "https://linkedin.com/in/farizasandaira",
+				"icon": "linkedin"
+			},
+			{
+				"name": "Twitter",
+				"url": "https://twitter.com/farizasandaira",
+				"icon": "twitter"
+			},
+			{
+				"name": "Instagram",
+				"url": "https://instagram.com/farizasandaira",
+				"icon": "instagram"
+			}
+		],
+		"form": {
+			"labels": {
+				"name": "Nama Anda",
+				"email": "Email Anda",
+				"subject": "Subjek",
+				"message": "Pesan Anda"
+			},
+			"placeholders": {
+				"name": "Masukkan nama Anda",
+				"email": "Masukkan email Anda",
+				"subject": "Tentang apa ini?",
+				"message": "Ceritakan tentang proyek Anda..."
+			},
+			"submitButton": "Kirim Pesan",
+			"successMessage": "Terima kasih {name}! Pesan Anda telah berhasil dikirim. Saya akan segera menghubungi Anda.",
+			"errorMessage": "Maaf, terjadi kesalahan saat mengirim pesan Anda. Silakan coba lagi atau hubungi saya langsung."
+		},
+		"animationSrc": "https://assets2.lottiefiles.com/packages/lf20_V9t630.json"
+	}
 }
